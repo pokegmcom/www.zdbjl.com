@@ -2,1009 +2,403 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>游戏攻略 - 战斗吧精灵 | 全世代宝可梦手游</title>
-    <meta name="keywords" content="战斗吧精灵, 游戏攻略, 口袋妖怪手游, 新手攻略, 进阶技巧, 战斗策略">
-    <meta name="description" content="《战斗吧精灵》专业游戏攻略指南，从新手入门到大师进阶全覆盖！详细讲解精灵培养技巧、属性相克策略、资源获取方法、配队思路等核心知识，助你快速成长为顶级训练家，称霸口袋妖怪对战舞台！">
-    
-    <!-- Open Graph 标签 -->
-    <meta property="og:title" content="游戏攻略 - 战斗吧精灵 | 口袋妖怪手游">
-    <meta property="og:description" content="《战斗吧精灵》专业游戏攻略指南，从新手入门到大师进阶全覆盖！详细讲解精灵培养技巧、属性相克策略、资源获取方法、配队思路等核心知识，助你快速成长为顶级训练家！">
-    <meta property="og:image" content="img/logo.png">
-    <meta property="og:url" content="https://zdbjl.nnii.cn/guide.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="战斗吧精灵">
-    <meta property="og:locale" content="zh_CN">
-    
-    <!-- Twitter Card 标签 -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="游戏攻略 - 战斗吧精灵 | 口袋妖怪手游">
-    <meta name="twitter:description" content="《战斗吧精灵》游戏攻略，从新手到大师的完整指南，包括精灵培养、战斗策略、资源获取等详细技巧！">
-    <meta name="twitter:image" content="img/logo.png">
-    
-    <!-- 引入Tailwind CSS CDN -->
-    <!-- Tailwind 配置 -->
-    <script>
-                }
-            }
-        }
-    </script>
-    <!-- 引入外部CSS文件 -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/fontawesome.css" rel="stylesheet">
+    <title>游戏攻略 - 《战斗吧！精灵》手游</title>
+    <meta name="keywords" content="战斗吧精灵攻略, 新手攻略, 道馆攻略, 精灵培养, 兑换码">
+    <meta name="description" content="战斗吧精灵新手攻略大全：初始精灵选择、资源获取、精灵培养、道馆挑战技巧等详细攻略。">
+    <link rel="canonical" href="https://www.zdbjl.com/guide.html">
+    <link rel="icon" type="image/png" href="img/icons/icon.png">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="bg-light font-sans text-dark overflow-x-hidden">
-    <!-- 导航栏 -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="header">
-        <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="img/logo.png" 
-                     alt="战斗吧精灵游戏图标" 
-                     class="h-10 w-10 rounded-lg shadow-sm object-cover transition-transform duration-300 hover:rotate-12">
-                <h1 class="text-xl md:text-2xl font-bold text-primary tracking-tight">战斗吧精灵</h1>
-            </div>
-            
-            <!-- 桌面端导航 -->
-            <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
-                <!-- 首页 -->
-                <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
-                    首页
-                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                
-                <!-- 游戏内容下拉菜单 -->
-                <div class="relative group">
-                    <button class="flex items-center text-primary font-medium relative">
-                        游戏内容
-                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
-                        <span class="absolute bottom-[-4px] left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
-                    </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                        <div class="py-2">
-                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                游戏特色
-                            </a>
-                            <a href="guide.html" class="block px-4 py-2 text-primary bg-primary/5">
-                                游戏攻略
-                            </a>
-                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                属性相克
-                            </a>
-                        </div>
+<body>
+
+    <header id="pm-header" class="pm-header">
+        <div class="pm-container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                    <img src="img/icons/icon.png" alt="战斗吧精灵游戏图标" class="rounded-3 shadow-sm" width="40" height="40">
+                    <div>
+                        <span class="fs-4 fw-bold" style="color: var(--pm-primary);">战斗吧！精灵</span>
+                        <span class="badge ms-1" style="background: linear-gradient(135deg, var(--pm-accent), #f59e0b);">手游</span>
                     </div>
-                </div>
-                
-                <!-- 兑换码 -->
-                <a href="codes.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
-                    兑换码
-                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                
-                <!-- 社区与资讯下拉菜单 -->
-                <div class="relative group">
-                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
-                        社区资讯
-                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
-                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+
+                <nav class="d-none d-lg-flex align-items-center gap-4">
+                    <a href="index.html" class="pm-nav-link">首页</a>
+                    <a href="features.html" class="pm-nav-link">游戏特色</a>
+                    <a href="guide.html" class="pm-nav-link active">游戏攻略</a>
+                    <a href="codes.html" class="pm-nav-link">兑换码</a>
+                    <a href="contact.html" class="pm-nav-link">联系我们</a>
+                    <a href="articles.html" class="pm-nav-link">资讯文章</a>
+                </nav>
+
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://game.6266game.cn/website/zdbjl/?4fCeStDv" class="pm-btn-primary d-none d-md-flex" style="padding: 0.6rem 1.5rem; font-size: 1rem;">
+                        <i class="fas fa-download me-2" aria-hidden="true"></i>
+                        立即下载
+                    </a>
+                    <button class="btn btn-link d-lg-none p-2" id="pm-menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="pm-mobile-menu" style="color: var(--pm-dark); font-size: 1.5rem;">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
                     </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                        <div class="py-2">
-                            <a href="news.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                游戏公告
-                            </a>
-                            <a href="community.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                玩家社区
-                            </a>
-                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                联系我们
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                
-                <!-- 游戏下载 -->
-                <a href="download.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
-                    游戏下载
-                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                
-                <!-- 更多 -->
-                <div class="relative group">
-                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
-                        更多
-                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
-                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                    </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                        <div class="py-2">
-                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
-                                更多口袋妖怪游戏
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            
-            <div class="flex items-center space-x-3">
-                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
-                   class="hidden md:flex items-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
-                    <i class="fa fa-download mr-2"></i> 立即下载
-                </a>
-                <!-- 移动端菜单按钮 -->
-                <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
-                    <i class="fa fa-bars"></i>
-                </button>
             </div>
         </div>
-        
-        <!-- 移动端菜单 -->
-        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-300 z-[-1]" id="mobile-menu">
-            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-2 max-h-[80vh] overflow-y-auto">
-                <div class="mb-2">
-                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">常用功能</p>
-                    <a href="index.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-home w-6"></i> 首页
-                    </a>
-                    <a href="download.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-download w-6"></i> 游戏下载
-                    </a>
-                    <a href="codes.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-gift w-6"></i> 兑换码
-                    </a>
-                </div>
-                
-                <div class="mb-2">
-                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">游戏内容</p>
-                    <a href="features.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-star w-6"></i> 游戏特色
-                    </a>
-                    <a href="guide.html" class="flex items-center text-primary py-3 px-4 rounded-lg bg-primary/5">
-                        <i class="fas fa-book w-6"></i> 游戏攻略
-                    </a>
-                    <a href="pokedex.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-table w-6"></i> 属性相克
-                    </a>
-                </div>
-                
-                <div class="mb-2">
-                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">社区与资讯</p>
-                    <a href="news.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-bullhorn w-6"></i> 游戏公告
-                    </a>
-                    <a href="community.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-users w-6"></i> 玩家社区
-                    </a>
-                    <a href="contact.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
-                        <i class="fas fa-envelope w-6"></i> 联系我们
-                    </a>
-                </div>
-                
-                <div class="border-t border-gray-100 pt-2">
-                    <a href="https://www.nnii.cn" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-external-link w-6"></i> 更多口袋妖怪游戏
-                    </a>
-                </div>
-                
-                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
-                   class="text-center px-5 py-3 gradient-primary text-white rounded-full btn-hover font-medium mt-3 shadow-md">
-                    <i class="fas fa-download mr-2"></i> 立即下载游戏
+
+        <div id="pm-mobile-menu" class="pm-mobile-menu d-lg-none border-top" style="background: white;">
+            <div class="pm-container py-3 d-flex flex-column gap-2">
+                <a href="index.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none" style="color: var(--pm-dark);">
+                    <i class="fas fa-home" style="width: 24px; text-align: center; color: var(--pm-primary);"></i>首页
+                </a>
+                <a href="features.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none" style="color: var(--pm-dark); border-top: 1px solid #f1f5f9;">
+                    <i class="fas fa-star" style="width: 24px; text-align: center; color: var(--pm-primary);"></i>游戏特色
+                </a>
+                <a href="guide.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none fw-bold" style="color: var(--pm-primary); border-top: 1px solid #f1f5f9;">
+                    <i class="fas fa-book" style="width: 24px; text-align: center;"></i>游戏攻略
+                </a>
+                <a href="codes.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none" style="color: var(--pm-dark); border-top: 1px solid #f1f5f9;">
+                    <i class="fas fa-gift" style="width: 24px; text-align: center; color: var(--pm-primary);"></i>兑换码
+                </a>
+                <a href="contact.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none" style="color: var(--pm-dark); border-top: 1px solid #f1f5f9;">
+                    <i class="fas fa-headset" style="width: 24px; text-align: center; color: var(--pm-primary);"></i>联系我们
+                </a>
+                <a href="articles.html" class="d-flex align-items-center gap-2 py-2 text-decoration-none" style="color: var(--pm-dark); border-top: 1px solid #f1f5f9;">
+                    <i class="fas fa-newspaper" style="width: 24px; text-align: center; color: var(--pm-primary);"></i>资讯文章
+                </a>
+                <a href="https://game.6266game.cn/website/zdbjl/?4fCeStDv" class="pm-btn-primary justify-content-center mt-2" style="font-size: 1rem; padding: 0.75rem;">
+                    <i class="fas fa-download me-2"></i>立即下载游戏
                 </a>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- 英雄区域 -->
-        <section class="relative overflow-hidden">
-            <div class="relative h-[60vh] min-h-[400px] overflow-hidden">
-                <!-- 手机端背景图 -->
-                <img src="img/home.png" 
-                     alt="战斗吧精灵游戏宣传图" 
-                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow md:hidden"
-                     loading="lazy">
-                <!-- 电脑端背景图 -->
-                <img src="img/contentBg1.png" 
-                     alt="战斗吧精灵游戏宣传图" 
-                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow hidden md:block"
-                     loading="lazy">
-                <div class="absolute inset-0 gradient-overlay"></div>
-                
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12 z-10">
-                    <h2 class="text-[clamp(2rem,7vw,3.5rem)] font-bold text-white text-shadow-lg mb-6 animate-fade-in">
-                        游戏攻略
-                    </h2>
-                    <p class="text-[clamp(1rem,2.5vw,1.4rem)] text-white text-shadow max-w-3xl mx-auto mb-8 animate-slide-up">
-                        从新手到大师的完整指南，掌握游戏的核心玩法和进阶技巧
-                    </p>
-                </div>
-                
-                <!-- 底部渐变过渡 -->
-                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-light to-transparent"></div>
-            </div>
-        </section>
-
-        <!-- 攻略分类 -->
-        <section class="section-padding bg-white">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="section-title">攻略分类</h2>
-                <div class="divider"></div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    <a href="#beginner" class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-primary/20 transition-colors">
-                            <i class="fa fa-star text-2xl md:text-3xl text-primary group-hover:scale-110 transition-transform"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">新手入门</h3>
-                        <p class="text-gray-600">
-                            新手必看的游戏基础知识，快速上手游戏
-                        </p>
-                    </a>
-                    
-                    <a href="#evolution" class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group text-center">
-                        <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-secondary/20 transition-colors">
-                            <i class="fa fa-rocket text-2xl md:text-3xl text-secondary group-hover:scale-110 transition-transform"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">进化系统</h3>
-                        <p class="text-gray-600">
-                            详细了解Mega进化、极巨化和太晶化系统
-                        </p>
-                    </a>
-                    
-                    <a href="#battle" class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group text-center">
-                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-accent/20 transition-colors">
-                            <i class="fa fa-shield text-2xl md:text-3xl text-accent group-hover:scale-110 transition-transform"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">战斗策略</h3>
-                        <p class="text-gray-600">
-                            掌握战斗技巧，成为顶级训练家
-                        </p>
-                    </a>
-                    
-                    <a href="#resources" class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-primary/20 transition-colors">
-                            <i class="fa fa-diamond text-2xl md:text-3xl text-primary group-hover:scale-110 transition-transform"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">资源获取</h3>
-                        <p class="text-gray-600">
-                            高效获取游戏资源，快速提升实力
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 新手入门攻略 -->
-        <section id="beginner" class="section-padding bg-light">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="section-title">新手入门攻略</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">
-                    刚进入游戏的训练家必看，帮助你快速上手《战斗吧精灵》
+    <main style="padding-top: 72px;">
+        <section class="pm-hero" style="min-height: 50vh;">
+            <div class="pm-hero-bg"></div>
+            <div class="pm-hero-overlay"></div>
+            <div class="pm-hero-content">
+                <h1 class="pm-hero-title">游戏攻略</h1>
+                <p class="pm-hero-subtitle">
+                    新手入门指南<br>
+                    <span style="color: var(--pm-accent);">精灵培养</span> · <span style="color: #60a5fa;">资源获取</span> · <span style="color: var(--pm-primary);">道馆挑战</span>
                 </p>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-10">
-                    <h3 class="text-2xl font-bold text-dark mb-6">初始精灵选择</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-light rounded-xl p-5 shadow-md card-hover border border-gray-100">
-                            <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                                <i class="fa fa-fire text-3xl text-red-500"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-dark mb-2 text-center">火属性</h4>
-                            <p class="text-gray-600 text-center">
-                                攻击力强，适合喜欢主动进攻的玩家，初期战斗优势明显
-                            </p>
-                        </div>
-                        <div class="bg-light rounded-xl p-5 shadow-md card-hover border border-gray-100">
-                            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                                <i class="fa fa-tint text-3xl text-blue-500"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-dark mb-2 text-center">水属性</h4>
-                            <p class="text-gray-600 text-center">
-                                防御力高，适合持久战，后期发展潜力大
-                            </p>
-                        </div>
-                        <div class="bg-light rounded-xl p-5 shadow-md card-hover border border-gray-100">
-                            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                                <i class="fa fa-leaf text-3xl text-green-500"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-dark mb-2 text-center">草属性</h4>
-                            <p class="text-gray-600 text-center">
-                                技能多样，适合策略型玩家，对新手友好
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-10">
-                    <h3 class="text-2xl font-bold text-dark mb-6">前期升级指南</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">1</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">完成主线任务</h4>
-                                <p class="text-gray-600">
-                                    主线任务是经验和资源的主要来源，优先完成主线任务可以快速提升等级
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">2</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">参与日常活动</h4>
-                                <p class="text-gray-600">
-                                    每日活动提供大量经验和资源，记得每天完成所有日常任务
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">3</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">合理使用经验糖果</h4>
-                                <p class="text-gray-600">
-                                    经验糖果可以快速提升精灵等级，建议优先用于主力精灵
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">4</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">挑战野生口袋妖怪</h4>
-                                <p class="text-gray-600">
-                                    在地图上挑战野生口袋妖怪也是获取经验的重要途径，同时可以收集精灵
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-dark mb-6">新手常见问题</h3>
-                    <div class="space-y-4">
-                        <div class="border-b border-gray-200 pb-4">
-                            <h4 class="font-bold text-lg text-dark mb-2">如何获取更多精灵？</h4>
-                            <p class="text-gray-600">
-                                可以通过野生捕捉、扭蛋、活动奖励等方式获取精灵。建议优先完成主线任务解锁更多捕捉区域。
-                            </p>
-                        </div>
-                        <div class="border-b border-gray-200 pb-4">
-                            <h4 class="font-bold text-lg text-dark mb-2">如何提升精灵实力？</h4>
-                            <p class="text-gray-600">
-                                通过升级、进化、学习技能、佩戴携带物等方式提升精灵实力。合理分配资源，重点培养几只主力精灵。
-                            </p>
-                        </div>
-                        <div class="border-b border-gray-200 pb-4">
-                            <h4 class="font-bold text-lg text-dark mb-2">如何获取游戏资源？</h4>
-                            <p class="text-gray-600">
-                                完成日常任务、参与活动、挑战道馆、PVP对战等都可以获取游戏资源。记得每天登录领取登录奖励。
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg text-dark mb-2">如何兑换兑换码？</h4>
-                            <p class="text-gray-600">
-                                在游戏主界面点击设置按钮，找到兑换码入口，输入兑换码即可领取奖励。
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- 进化系统攻略 -->
-        <section id="evolution" class="section-padding bg-white">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="section-title">进化系统攻略</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">
-                    深入了解游戏中的三种进化系统，掌握进化的最佳时机
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10">
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                            <i class="fa fa-bolt text-2xl md:text-3xl text-primary"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">Mega进化</h3>
-                        <p class="text-gray-600 mb-4">
-                            Mega进化是一种临时进化形态，需要Mega石和足够的能量。进化后口袋妖怪能力大幅提升，外观也会发生变化。
-                        </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>需要Mega石和Mega能量</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>战斗中临时进化，战斗结束后恢复</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>提升能力，解锁新技能</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                            <i class="fa fa-diamond text-2xl md:text-3xl text-secondary"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">太晶化</h3>
-                        <p class="text-gray-600 mb-4">
-                            太晶化是一种全新的进化系统，可以改变口袋妖怪的属性和招式效果，创造出意想不到的战斗反转。
-                        </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>需要太晶珠</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>改变口袋妖怪属性</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>增强相同属性招式</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                            <i class="fa fa-expand text-2xl md:text-3xl text-accent"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">极巨化</h3>
-                        <p class="text-gray-600 mb-4">
-                            极巨化可以让口袋妖怪变得巨大，释放强大的极巨招式，在团战中发挥重要作用。
-                        </p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>需要极巨腕带</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>口袋妖怪巨大化，提升能力</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-check text-primary mt-1"></i>
-                                <span>释放强大的极巨招式</span>
-                            </li>
-                        </ul>
-                    </div>
+        <section class="py-5" style="background: linear-gradient(180deg, white, var(--pm-light));">
+            <div class="pm-container">
+                <div class="pm-section-title pm-fade-in-up">
+                    <h2><i class="fas fa-play-circle me-2" style="color: var(--pm-primary);"></i>新手入门</h2>
+                    <div class="pm-title-bar"></div>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-dark mb-6">进化时机选择</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-lg text-dark mb-3">Mega进化时机</h4>
-                            <p class="text-gray-600 mb-4">
-                                建议在关键战斗中使用Mega进化，如道馆挑战、PVP对战等。Mega进化后口袋妖怪能力大幅提升，可以扭转战局。
-                            </p>
-                            <p class="text-gray-600">
-                                注意：Mega进化有冷却时间，使用后需要等待一段时间才能再次使用。
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg text-dark mb-3">太晶化时机</h4>
-                            <p class="text-gray-600 mb-4">
-                                太晶化可以根据对手的属性进行调整，创造属性优势。例如，当对手是火属性时，可以将草属性口袋妖怪太晶化为水属性。
-                            </p>
-                            <p class="text-gray-600">
-                                建议在遇到属性克制的对手时使用太晶化，改变口袋妖怪属性以获得优势。
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg text-dark mb-3">极巨化时机</h4>
-                            <p class="text-gray-600 mb-4">
-                                极巨化适合在团战中使用，尤其是面对强大的对手或BOSS战时。极巨化后的口袋妖怪不仅能力提升，还能释放强大的极巨招式。
-                            </p>
-                            <p class="text-gray-600">
-                                注意：极巨化只能在极巨化场地中使用，每场战斗只能使用一次。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- 战斗策略攻略 -->
-        <section id="battle" class="section-padding bg-light">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="section-title">战斗策略攻略</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">
-                    掌握战斗技巧，成为顶级训练家，在对战中脱颖而出
-                </p>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-10">
-                    <h3 class="text-2xl font-bold text-dark mb-6">属性克制</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full border-collapse">
-                            <thead>
-                                <tr class="bg-primary/10">
-                                    <th class="border border-gray-200 p-3 text-left">攻击属性</th>
-                                    <th class="border border-gray-200 p-3 text-left">效果拔群</th>
-                                    <th class="border border-gray-200 p-3 text-left">效果不佳</th>
-                                    <th class="border border-gray-200 p-3 text-left">无效</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="border border-gray-200 p-3 font-medium">火</td>
-                                    <td class="border border-gray-200 p-3">草、冰、虫、钢</td>
-                                    <td class="border border-gray-200 p-3">火、水、岩石、龙</td>
-                                    <td class="border border-gray-200 p-3">无</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="border border-gray-200 p-3 font-medium">水</td>
-                                    <td class="border border-gray-200 p-3">火、地面、岩石</td>
-                                    <td class="border border-gray-200 p-3">水、草、龙</td>
-                                    <td class="border border-gray-200 p-3">无</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="border border-gray-200 p-3 font-medium">草</td>
-                                    <td class="border border-gray-200 p-3">水、地面、岩石</td>
-                                    <td class="border border-gray-200 p-3">火、草、毒、飞、虫、钢</td>
-                                    <td class="border border-gray-200 p-3">无</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="border border-gray-200 p-3 font-medium">电</td>
-                                    <td class="border border-gray-200 p-3">水、飞</td>
-                                    <td class="border border-gray-200 p-3">电、草、龙</td>
-                                    <td class="border border-gray-200 p-3">地面</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="border border-gray-200 p-3 font-medium">冰</td>
-                                    <td class="border border-gray-200 p-3">草、地面、飞、龙</td>
-                                    <td class="border border-gray-200 p-3">火、水、冰、钢</td>
-                                    <td class="border border-gray-200 p-3">无</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="pm-card pm-card-primary pm-fade-in-up h-100">
+                            <h3 class="h4 fw-bold mb-3"><i class="fas fa-hand-pointer me-2"></i>初始精灵选择</h3>
+                            <p class="text-muted mb-3">游戏开始时，御三家可任选其一，后续都能通过野外捕捉获得其他精灵。</p>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="p-3 rounded-3" style="background: rgba(255,92,92,0.1);">
+                                    <div class="fw-bold" style="color: var(--pm-primary);">妙蛙种子</div>
+                                    <div class="small text-muted">不错防御和续航，能学催眠粉、寄生种子等辅助技能</div>
+                                </div>
+                                <div class="p-3 rounded-3" style="background: rgba(59,130,246,0.1);">
+                                    <div class="fw-bold" style="color: var(--pm-secondary);">水跃鱼</div>
+                                    <div class="small text-muted">进化后水地属性强，前期克岩石道馆</div>
+                                </div>
+                                <div class="p-3 rounded-3" style="background: rgba(251,191,36,0.1);">
+                                    <div class="fw-bold" style="color: var(--pm-accent);">火稚鸡</div>
+                                    <div class="small text-muted">打水道馆弱，但进化后格斗属性弥补弱点</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pm-card pm-card-secondary pm-fade-in-up h-100">
+                            <h3 class="h4 fw-bold mb-3"><i class="fas fa-gift me-2"></i>开局必做事项</h3>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="badge rounded-circle d-flex align-items-center justify-content-center" style="width: 28px; height: 28px; background: var(--pm-secondary); flex-shrink: 0;">1</div>
+                                    <div>
+                                        <div class="fw-bold">领取游戏礼包</div>
+                                        <div class="small text-muted">做主线升到15级，右上角出现福利图标，输入兑换码得钻石、精灵球、经验药水等开局重要资源</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="badge rounded-circle d-flex align-items-center justify-content-center" style="width: 28px; height: 28px; background: var(--pm-secondary); flex-shrink: 0;">2</div>
+                                    <div>
+                                        <div class="fw-bold">优先主线任务</div>
+                                        <div class="small text-muted">前期别做支线浪费疲劳和体力，专注主线快速升级解锁功能。第一天运气好能到40级</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="badge rounded-circle d-flex align-items-center justify-content-center" style="width: 28px; height: 28px; background: var(--pm-secondary); flex-shrink: 0;">3</div>
+                                    <div>
+                                        <div class="fw-bold">40级后刷伊布副本</div>
+                                        <div class="small text-muted">40级后刷伊布副本拿稀有资源</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-10">
-                    <h3 class="text-2xl font-bold text-dark mb-6">战斗技巧</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-light rounded-xl p-5 shadow-md">
-                            <h4 class="font-bold text-lg text-dark mb-3">队伍搭配</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>确保队伍属性多样化，覆盖不同类型的对手</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>包含攻击型、防御型和辅助型精灵</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>考虑精灵之间的配合，如技能组合、特性配合</span>
-                                </li>
+
+                <div class="pm-section-title pm-fade-in-up">
+                    <h2><i class="fas fa-map-marked-alt me-2" style="color: var(--pm-primary);"></i>资源获取与分配</h2>
+                    <div class="pm-title-bar"></div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4">
+                        <div class="pm-card pm-card-accent pm-fade-in-up h-100">
+                            <div class="text-center mb-3">
+                                <div class="pm-feature-icon pm-feature-icon-accent" style="margin: 0 auto;">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                            </div>
+                            <h3 class="h5 fw-bold text-center mb-3">金币</h3>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2">• 做任务、出售物品获得</li>
+                                <li class="mb-2">• 优先满足主力精灵升级、进化</li>
+                                <li class="mb-2">• 前期别在商店大量购买普通恢复道具</li>
+                                <li>• 战斗掉落基本能满足需求</li>
                             </ul>
                         </div>
-                        <div class="bg-light rounded-xl p-5 shadow-md">
-                            <h4 class="font-bold text-lg text-dark mb-3">技能选择</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>根据对手属性选择克制的技能</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>携带不同类型的技能，应对各种情况</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>注意技能的PP值，合理使用</span>
-                                </li>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pm-card pm-card-primary pm-fade-in-up h-100">
+                            <div class="text-center mb-3">
+                                <div class="pm-feature-icon pm-feature-icon-primary" style="margin: 0 auto;">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                            </div>
+                            <h3 class="h5 fw-bold text-center mb-3">钻石</h3>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2">• 充值、活动、成就获取</li>
+                                <li class="mb-2">• 别用钻石抽普通精灵，性价比低</li>
+                                <li class="mb-2">• 可买体力疲劳</li>
+                                <li>• 在限时活动换稀有道具或精灵碎片</li>
                             </ul>
                         </div>
-                        <div class="bg-light rounded-xl p-5 shadow-md">
-                            <h4 class="font-bold text-lg text-dark mb-3">道具使用</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>携带回复类道具，如药水、解毒剂等</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>使用增强类道具，提升精灵能力</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>根据战斗情况及时使用道具</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bg-light rounded-xl p-5 shadow-md">
-                            <h4 class="font-bold text-lg text-dark mb-3">战斗策略</h4>
-                            <ul class="space-y-2 text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>优先攻击对手的弱点</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>合理利用属性克制关系</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fa fa-angle-right text-primary mt-1"></i>
-                                    <span>注意控制战斗节奏，适时使用进化系统</span>
-                                </li>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pm-card pm-card-green pm-fade-in-up h-100">
+                            <div class="text-center mb-3">
+                                <div class="pm-feature-icon pm-feature-icon-green" style="margin: 0 auto;">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                            </div>
+                            <h3 class="h5 fw-bold text-center mb-3">体力与疲劳</h3>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2">• 体力刷副本，优先选有进化材料、经验高的副本</li>
+                                <li class="mb-2">• 疲劳用于野外遇精灵和狩猎场</li>
+                                <li>• 建议囤八千到一万疲劳刚好够十分钟</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-dark mb-6">PVP对战技巧</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">1</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">了解当前环境</h4>
-                                <p class="text-gray-600">
-                                    关注当前版本强势的精灵和战术，针对性地调整自己的队伍
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">2</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">构建平衡队伍</h4>
-                                <p class="text-gray-600">
-                                    确保队伍有输出、坦克和辅助，能够应对各种情况
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">3</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">掌握时机</h4>
-                                <p class="text-gray-600">
-                                    合理使用进化系统和道具，把握战斗的关键时刻
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                <span class="font-bold text-primary">4</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-dark mb-2">学习对手策略</h4>
-                                <p class="text-gray-600">
-                                    观察对手的战术，学习成功的策略，不断调整自己的打法
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+
+                <div class="pm-section-title pm-fade-in-up">
+                    <h2><i class="fas fa-map-pin me-2" style="color: var(--pm-primary);"></i>野外捕捉地点</h2>
+                    <div class="pm-title-bar"></div>
                 </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pm-card pm-card-primary pm-fade-in-up h-100">
+                            <h4 class="h5 fw-bold mb-2"><i class="fas fa-mountain me-2"></i>月见山</h4>
+                            <p class="text-muted small mb-2">25级主线开启</p>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• 盐石巨灵</li>
+                                <li>• 化石翼龙</li>
+                                <li>• 盐石巨灵是沙暴队核心</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pm-card pm-card-secondary pm-fade-in-up h-100">
+                            <h4 class="h5 fw-bold mb-2"><i class="fas fa-ghost me-2"></i>紫苑镇</h4>
+                            <p class="text-muted small mb-2">可抓取稀有精灵</p>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• 耿鬼一家</li>
+                                <li>• 闪光暴鲤龙</li>
+                                <li>• 闪光迷你龙</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pm-card pm-card-accent pm-fade-in-up h-100">
+                            <h4 class="h5 fw-bold mb-2"><i class="fas fa-fort-awesome me-2"></i>狩猎场</h4>
+                            <p class="text-muted small mb-2">20级开启</p>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• 每天10-12点、20-22点开放</li>
+                                <li>• 从地图进入【竞技中心】</li>
+                                <li>• 能抓赛富豪等热门宠</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pm-card pm-card-purple pm-fade-in-up h-100">
+                            <h4 class="h5 fw-bold mb-2"><i class="fas fa-star me-2"></i>扭蛋系统</h4>
+                            <p class="text-muted small mb-2">获取精灵重要途径</p>
+                            <ul class="list-unstyled text-muted small">
+                                <li>• 精灵扭蛋：100次保底UR</li>
+                                <li>• 学习机：100次保底UR</li>
+                                <li>• 携带物：100次保底UR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pm-section-title pm-fade-in-up">
+                    <h2><i class="fas fa-dragon me-2" style="color: var(--pm-primary);"></i>精灵培养技巧</h2>
+                    <div class="pm-title-bar"></div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="pm-guide-item pm-fade-in-up">
+                            <h4><i class="fas fa-level-up-alt me-2" style="color: var(--pm-primary);"></i>等级提升</h4>
+                            <p class="text-muted mb-0">靠战斗、任务、经验道具。优先主线任务，也参加日常活动、探索副本。合理分配经验道具。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pm-guide-item pm-fade-in-up" style="border-color: var(--pm-secondary);">
+                            <h4><i class="fas fa-magic me-2" style="color: var(--pm-secondary);"></i>技能学习</h4>
+                            <p class="text-muted mb-0">依精灵属性和战斗需求选技能，消耗材料升级学习或用技能学习机学习。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pm-guide-item pm-fade-in-up" style="border-color: var(--pm-accent);">
+                            <h4><i class="fas fa-arrow-up me-2" style="color: var(--pm-accent);"></i>进化方式</h4>
+                            <p class="text-muted mb-0">提升等级进化、亲密度进化、道具石头进化等多种方式。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pm-section-title pm-fade-in-up">
+                    <h2><i class="fas fa-trophy me-2" style="color: var(--pm-primary);"></i>道馆挑战技巧</h2>
+                    <div class="pm-title-bar"></div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8">
+                        <div class="pm-card pm-card-green pm-fade-in-up">
+                            <h3 class="h4 fw-bold mb-4">阵容搭配思路</h3>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 text-center" style="background: rgba(34,197,94,0.1);">
+                                        <i class="fas fa-fist-raised fs-3 mb-2" style="color: var(--pm-primary);"></i>
+                                        <div class="fw-bold">核心输出手</div>
+                                        <div class="small text-muted">高攻击力和强力技能</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 text-center" style="background: rgba(59,130,246,0.1);">
+                                        <i class="fas fa-shield-alt fs-3 mb-2" style="color: var(--pm-secondary);"></i>
+                                        <div class="fw-bold">防御坦克</div>
+                                        <div class="small text-muted">高HP和双防</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 text-center" style="background: rgba(168,85,247,0.1);">
+                                        <i class="fas fa-hat-wizard fs-3 mb-2" style="color: #a855f7;"></i>
+                                        <div class="fw-bold">辅助干扰手</div>
+                                        <div class="small text-muted">增益或干扰对手</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pm-card pm-card-primary pm-fade-in-up h-100">
+                            <h3 class="h4 fw-bold mb-3">战斗技巧</h3>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2">• 熟悉属性相克关系</li>
+                                <li class="mb-2">• 合理释放技能顺序</li>
+                                <li class="mb-2">• 利用精灵特性</li>
+                                <li>• 优先使用控制技能</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- 资源获取攻略 -->
-        <section id="resources" class="section-padding bg-white">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="section-title">资源获取攻略</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">
-                    高效获取游戏资源，快速提升实力，成为顶级训练家
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i class="fa fa-coins text-2xl text-primary"></i>
-                            </div>
-                            <h3 class="text-xl md:text-2xl font-bold text-dark">金币获取</h3>
-                        </div>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>完成日常任务和主线任务</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>挑战道馆和PVP对战</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>参与限时活动</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>出售多余的道具和精灵</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
-                                <i class="fa fa-gem text-2xl text-secondary"></i>
-                            </div>
-                            <h3 class="text-xl md:text-2xl font-bold text-dark">水晶获取</h3>
-                        </div>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>完成成就和任务</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>参与PVP对战并获得排名奖励</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>登录奖励和活动奖励</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>购买水晶礼包（可选）</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                                <i class="fa fa-star text-2xl text-accent"></i>
-                            </div>
-                            <h3 class="text-xl md:text-2xl font-bold text-dark">经验获取</h3>
-                        </div>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>挑战野生口袋妖怪和训练家</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>使用经验糖果</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>参与经验副本</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>完成日常任务和活动</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i class="fa fa-gift text-2xl text-primary"></i>
-                            </div>
-                            <h3 class="text-xl md:text-2xl font-bold text-dark">道具获取</h3>
-                        </div>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>探索地图，收集隐藏道具</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>参与活动和副本</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>使用兑换码领取奖励</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-angle-right text-primary mt-1"></i>
-                                <span>在商店购买道具</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 下载区域 -->
-        <section class="section-padding bg-gradient-to-b from-primary/5 to-white relative overflow-hidden">
-            <div class="container mx-auto px-4 md:px-6 relative z-10">
-                <h2 class="section-title">立即体验</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">
-                    加入《战斗吧精灵》的奇幻世界，运用攻略技巧成为顶级训练家！
-                </p>
-                
-                <div class="flex flex-col items-center">
-                    <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
-                       class="inline-flex items-center gradient-primary hover:brightness-110 text-white font-bold py-4 px-12 rounded-full text-lg md:text-xl btn-hover mb-10 shadow-xl"
-                       target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-download mr-3 text-2xl"></i> 立即下载游戏
-                    </a>
-                </div>
+        <section class="py-5" style="background: linear-gradient(135deg, var(--pm-primary), var(--pm-primary-dark));">
+            <div class="pm-container text-center">
+                <h2 class="text-white fw-bold mb-4 pm-fade-in-up">获取最新兑换码</h2>
+                <p class="text-white-50 mb-4 pm-fade-in-up">输入兑换码领取丰厚奖励，助力精灵训练师之路！</p>
+                <a href="codes.html" class="pm-btn-secondary pm-fade-in-up" style="background: white; color: var(--pm-primary); border-color: white;">
+                    <i class="fas fa-gift me-2"></i>查看兑换码
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- 页脚 -->
-    <footer class="bg-dark text-white pt-16 pb-6">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-                <div class="flex items-center mb-6 md:mb-0">
-                    <img src="logo.png" 
-                         alt="战斗吧精灵游戏图标" 
-                         class="h-12 w-12 rounded-lg mr-4 shadow-lg object-cover">
-                    <div>
-                        <h2 class="text-xl md:text-2xl font-bold mb-1">战斗吧精灵</h2>
-                        <p class="text-gray-400 text-sm">口袋妖怪正版授权手游</p>
+    <footer class="pm-footer">
+        <div class="pm-container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="img/icons/icon.png" alt="战斗吧精灵图标" width="40" height="40" class="rounded-3">
+                        <span class="fs-4 fw-bold text-white">战斗吧！精灵</span>
+                    </div>
+                    <p class="text-white-50 mb-0">正版宝可梦IP授权手游，1000+精灵等你来捕捉！</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">快速链接</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="features.html">游戏特色</a>
+                        <a href="guide.html">游戏攻略</a>
+                        <a href="codes.html">兑换码</a>
+                        <a href="contact.html">联系我们</a>
                     </div>
                 </div>
-                
-                <div class="flex space-x-6">
-                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
-                        <i class="fab fa-weibo"></i>
-                    </a>
-                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
-                        <i class="fab fa-weixin"></i>
-                    </a>
-                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
-                        <i class="fab fa-qq"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="border-t border-white/10 pt-10 mb-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    <div>
-                        <h3 class="text-lg font-bold mb-5 text-accent">快速链接</h3>
-                        <ul class="space-y-2">
-                            <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                首页
-                            </a></li>
-                            <li><a href="features.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                游戏特色
-                            </a></li>
-                            <li><a href="guide.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                游戏攻略
-                            </a></li>
-                            <li><a href="codes.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                兑换码
-                            </a></li>
-                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                联系我们
-                            </a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-bold mb-5 text-accent">资源链接</h3>
-                        <ul class="space-y-2">
-                            <li><a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                游戏下载
-                            </a></li>
-                            <li><a href="https://www.nnii.cn" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                更多口袋妖怪游戏
-                            </a></li>
-                            <li><a href="guide.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                游戏攻略
-                            </a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                常见问题
-                            </a></li>
-                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
-                                客服支持
-                            </a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-bold mb-5 text-accent">下载游戏</h3>
-                        <p class="text-gray-300 mb-3 text-sm">扫描二维码下载游戏</p>
-                        <div class="bg-white p-2 rounded-lg inline-block shadow-lg mb-3">
-                            <img src="xzewm.png" alt="下载二维码" class="w-24 h-24 object-cover"
-                                 loading="lazy">
-                        </div>
-                        <p class="text-gray-400 text-xs">支持安卓/iOS双平台</p>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-bold mb-5 text-accent">客服支持</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-headphones text-primary mt-1 text-sm"></i>
-                                <div>
-                                    <p class="text-gray-300 text-sm">在线客服</p>
-                                    <p class="text-gray-400 text-xs">工作日 9:00-18:00</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa fa-envelope text-primary mt-1 text-sm"></i>
-                                <div>
-                                    <p class="text-gray-300 text-sm">客服邮箱</p>
-                                    <p class="text-gray-400 text-xs">support@zdbjl.com</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fab fa-qq text-primary mt-1 text-sm"></i>
-                                <div>
-                                    <p class="text-gray-300 text-sm">官方QQ群</p>
-                                    <p class="text-gray-400 text-xs">931319494</p>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">联系我们</h5>
+                    <div class="d-flex flex-column gap-2 text-white-50">
+                        <span><i class="fas fa-envelope me-2"></i>support@zdbjl.com</span>
+                        <span><i class="fas fa-globe me-2"></i>www.zdbjl.com</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="border-t border-white/10 pt-6 text-center">
-                <p class="text-gray-400 text-sm">
-                    © 2026 战斗吧精灵 版权所有 | 游戏适龄提示：本游戏适合12岁以上玩家
-                </p>
-                <p class="text-gray-500 text-xs mt-2">
-                    本游戏适合12岁以上玩家 | 适度游戏益脑，沉迷游戏伤身
-                </p>
-            </div>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <p class="text-center text-white-50 mb-0" style="font-size: 0.875rem;">
+                © 2024-2026 战斗吧精灵手游 版权所有 | ICP备案：xxxxxxx号
+            </p>
         </div>
     </footer>
 
+    <script src="assets/js/jquery-4.0.0.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-        // 移动端菜单
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const isOpen = !mobileMenu.classList.contains('opacity-0');
-            
-            if (isOpen) {
-                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
-                mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
-            } else {
-                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
-                mobileMenu.classList.add('opacity-100', 'visible', 'translate-y-0', 'z-50');
-            }
-        });
-        
-        // 导航栏滚动效果
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('py-2');
-                header.classList.remove('shadow-lg');
-            }
-        });
-        
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        $(document).ready(function() {
+            $('#pm-menu-toggle').click(function() {
+                $('#pm-mobile-menu').toggleClass('active');
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#pm-header').addClass('scrolled');
+                } else {
+                    $('#pm-header').removeClass('scrolled');
+                }
+            });
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
                 });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.pm-fade-in-up').forEach(function(el) {
+                observer.observe(el);
             });
         });
     </script>
