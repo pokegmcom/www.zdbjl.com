@@ -37,97 +37,11 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
     
     <!-- 预连接关键资源 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
-    <!-- 结构化数据 -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "战斗吧精灵",
-        "alternateName": "口袋妖怪手游",
-        "url": "https://zdbjl.nnii.cn/",
-        "description": "全世代口袋妖怪手游，集Mega进化、太晶化、极巨化三大特色系统于一身",
-        "inLanguage": "zh-CN",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://zdbjl.nnii.cn/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Game",
-        "name": "战斗吧精灵",
-        "description": "全世代口袋妖怪手游，支持Mega进化、太晶化、极巨化等多种进化形态",
-        "applicationCategory": "GameApplication",
-        "genre": "Role-Playing Game",
-        "gamePlatform": ["Android", "iOS"],
-        "operatingSystem": ["Android 5.0+", "iOS 10.0+"],
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "CNY",
-            "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "12580"
-        },
-        "screenshot": "https://zdbjl.nnii.cn/img/screenshots/",
-        "featureList": ["Mega进化", "太晶化", "极巨化", "800+精灵", "PVP对战", "多人副本"]
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "战斗吧精灵",
-        "url": "https://zdbjl.nnii.cn/",
-        "logo": "https://zdbjl.nnii.cn/logo.png",
-        "sameAs": [
-            "https://weibo.com/zdbjl",
-            "https://qm.qq.com/q/zdbjl"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-400-xxx-xxxx",
-            "contactType": "customer service",
-            "availableLanguage": ["Chinese"],
-            "areaServed": "CN"
-        }
-    }
-    </script>
-    
-    <!-- 引入Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind 配置 -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#FF5E5B',
-                        secondary: '#4CAF50',
-                        accent: '#FFC107',
-                        dark: '#212121',
-                        light: '#f5f5f5'
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- 引入外部CSS文件 -->
-    <link href="style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- 本地化 CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fontawesome.css" rel="stylesheet">
 </head>
 <body class="bg-light font-sans text-dark overflow-x-hidden">
     <!-- 导航栏 -->
