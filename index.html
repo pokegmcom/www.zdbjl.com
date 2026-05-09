@@ -54,13 +54,11 @@
             
             <!-- 桌面端导航 -->
             <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
-                <!-- 首页 -->
                 <a href="index.html" class="text-primary font-medium relative group">
                     首页
                     <span class="absolute bottom-[-4px] left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
                 </a>
                 
-                <!-- 游戏内容下拉菜单 -->
                 <div class="relative group">
                     <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
                         游戏内容
@@ -69,26 +67,18 @@
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                         <div class="py-2">
-                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                游戏特色
-                            </a>
-                            <a href="guide.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                游戏攻略
-                            </a>
-                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                属性相克
-                            </a>
+                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">游戏特色</a>
+                            <a href="guide.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">游戏攻略</a>
+                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">属性相克</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- 兑换码 -->
                 <a href="codes.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
                     兑换码
                     <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 
-                <!-- 社区与资讯下拉菜单 -->
                 <div class="relative group">
                     <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
                         社区资讯
@@ -97,26 +87,18 @@
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                         <div class="py-2">
-                            <a href="news.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                游戏公告
-                            </a>
-                            <a href="community.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                玩家社区
-                            </a>
-                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
-                                联系我们
-                            </a>
+                            <a href="news.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">游戏公告</a>
+                            <a href="community.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">玩家社区</a>
+                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">联系我们</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- 游戏下载 -->
                 <a href="download.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
                     游戏下载
                     <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 
-                <!-- 更多 -->
                 <div class="relative group">
                     <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
                         更多
@@ -125,9 +107,7 @@
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                         <div class="py-2">
-                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
-                                更多口袋妖怪游戏
-                            </a>
+                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">更多口袋妖怪游戏</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +118,6 @@
                    class="hidden md:flex items-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
                     <i class="fas fa-download mr-2"></i> 立即下载
                 </a>
-                <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -148,7 +127,6 @@
         <!-- 移动端菜单 -->
         <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-300 z-[-1]" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-2 max-h-[80vh] overflow-y-auto">
-                <!-- 常用功能 -->
                 <div class="mb-2">
                     <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">常用功能</p>
                     <a href="index.html" class="flex items-center text-primary py-3 px-4 rounded-lg bg-primary/5">
@@ -162,7 +140,6 @@
                     </a>
                 </div>
                 
-                <!-- 游戏内容 -->
                 <div class="mb-2">
                     <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">游戏内容</p>
                     <a href="features.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
@@ -176,7 +153,6 @@
                     </a>
                 </div>
                 
-                <!-- 社区与资讯 -->
                 <div class="mb-2">
                     <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">社区与资讯</p>
                     <a href="news.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
@@ -190,7 +166,6 @@
                     </a>
                 </div>
                 
-                <!-- 更多 -->
                 <div class="border-t border-gray-100 pt-2">
                     <a href="https://www.nnii.cn" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-external-link w-6"></i> 更多口袋妖怪游戏

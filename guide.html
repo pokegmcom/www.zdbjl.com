@@ -139,23 +139,56 @@
         </div>
         
         <!-- 移动端菜单 -->
-        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-400 z-[-1]" id="mobile-menu">
-            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-3">
-                <a href="index.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">首页</a>
-                <a href="features.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏特色</a>
-                <a href="guide.html" class="text-primary py-3 px-4 rounded-lg bg-primary/5">游戏攻略</a>
-                <a href="codes.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">兑换码</a>
-                <a href="news.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏公告</a>
-                <a href="pokedex.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">属性相克</a>
-                <a href="download.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏下载</a>
-                <a href="community.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">玩家社区</a>
-                <a href="contact.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">联系我们</a>
-                <a href="https://www.nnii.cn" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
-                    更多口袋妖怪游戏
-                </a>
+        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-300 z-[-1]" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-2 max-h-[80vh] overflow-y-auto">
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">常用功能</p>
+                    <a href="index.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-home w-6"></i> 首页
+                    </a>
+                    <a href="download.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-download w-6"></i> 游戏下载
+                    </a>
+                    <a href="codes.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-gift w-6"></i> 兑换码
+                    </a>
+                </div>
+                
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">游戏内容</p>
+                    <a href="features.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-star w-6"></i> 游戏特色
+                    </a>
+                    <a href="guide.html" class="flex items-center text-primary py-3 px-4 rounded-lg bg-primary/5">
+                        <i class="fas fa-book w-6"></i> 游戏攻略
+                    </a>
+                    <a href="pokedex.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-table w-6"></i> 属性相克
+                    </a>
+                </div>
+                
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">社区与资讯</p>
+                    <a href="news.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-bullhorn w-6"></i> 游戏公告
+                    </a>
+                    <a href="community.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-users w-6"></i> 玩家社区
+                    </a>
+                    <a href="contact.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-envelope w-6"></i> 联系我们
+                    </a>
+                </div>
+                
+                <div class="border-t border-gray-100 pt-2">
+                    <a href="https://www.nnii.cn" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link w-6"></i> 更多口袋妖怪游戏
+                    </a>
+                </div>
+                
                 <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
-                   class="text-center px-5 py-3 gradient-primary text-white rounded-full btn-hover font-medium mt-2 shadow-md">
-                    <i class="fa fa-download mr-2"></i> 立即下载
+                   class="text-center px-5 py-3 gradient-primary text-white rounded-full btn-hover font-medium mt-3 shadow-md">
+                    <i class="fas fa-download mr-2"></i> 立即下载游戏
                 </a>
             </div>
         </div>
