@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏公告 - 战斗吧精灵 | 全世代口袋妖怪手游</title>
+    <meta name="keywords" content="战斗吧精灵, 游戏公告, 口袋妖怪手游, 活动公告, 返利活动">
+    <meta name="description" content="《战斗吧精灵》官方游戏公告首页，汇集最新活动资讯、返利活动、版本更新、攻略分享等丰富内容。作为口袋妖怪手游爱好者，关注官方公告能让你第一时间掌握游戏动态，参与活动赢取丰厚奖励！">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:title" content="游戏公告 - 战斗吧精灵 | 全世代口袋妖怪手游">
+    <meta property="og:description" content="《战斗吧精灵》官方游戏公告首页，汇集最新活动资讯、返利活动、版本更新、攻略分享等丰富内容。作为口袋妖怪手游爱好者，关注官方公告能让你第一时间掌握游戏动态，参与活动赢取丰厚奖励！">
+    <meta property="og:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    <meta property="og:url" content="https://zdbjl.nnii.cn/news.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="战斗吧精灵">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="游戏公告 - 战斗吧精灵 | 全世代口袋妖怪手游">
+    <meta name="twitter:description" content="《战斗吧精灵》游戏最新公告，包括活动信息、返利活动、版本更新等最新资讯！">
+    <meta name="twitter:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    
+    <!-- 引入Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5E5B',
+                        secondary: '#4CAF50',
+                        accent: '#FFC107',
+                        dark: '#212121',
+                        light: '#f5f5f5'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 引入外部CSS文件 -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-light font-sans text-dark overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926" 
+                     alt="战斗吧精灵游戏图标" 
+                     class="h-10 w-10 rounded-lg shadow-sm object-cover transition-transform duration-300 hover:rotate-12"
+                     loading="lazy">
+                <h1 class="text-xl md:text-2xl font-bold text-primary tracking-tight">战斗吧精灵</h1>
+            </div>
+            
+            <!-- 桌面端导航 -->
+            <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
+                <!-- 首页 -->
+                <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    首页
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 游戏内容下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        游戏内容
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏特色
+                            </a>
+                            <a href="guide.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏攻略
+                            </a>
+                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                属性相克
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 兑换码 -->
+                <a href="codes.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    兑换码
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 社区与资讯下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-primary font-medium relative">
+                        社区资讯
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="news.html" class="block px-4 py-2 text-primary bg-primary/5">
+                                游戏公告
+                            </a>
+                            <a href="community.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                玩家社区
+                            </a>
+                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                联系我们
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 游戏下载 -->
+                <a href="download.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    游戏下载
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 更多 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        更多
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                                更多口袋妖怪游戏
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="flex items-center space-x-3">
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                   class="hidden md:flex items-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
+                    <i class="fa fa-download mr-2"></i> 立即下载
+                </a>
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-400 z-[-1]" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-3">
+                <a href="index.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">首页</a>
+                <a href="features.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏特色</a>
+                <a href="guide.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏攻略</a>
+                <a href="codes.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">兑换码</a>
+                <a href="news.html" class="text-primary py-3 px-4 rounded-lg bg-primary/5">游戏公告</a>
+                <a href="pokedex.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">属性相克</a>
+                <a href="download.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏下载</a>
+                <a href="community.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">玩家社区</a>
+                <a href="contact.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">联系我们</a>
+                <a href="https://www.nnii.cn" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
+                    更多口袋妖怪游戏
+                </a>
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                   class="text-center px-5 py-3 gradient-primary text-white rounded-full btn-hover font-medium mt-2 shadow-md">
+                    <i class="fa fa-download mr-2"></i> 立即下载
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 英雄区域 -->
+        <section class="relative overflow-hidden">
+            <div class="relative h-[60vh] min-h-[400px] overflow-hidden">
+                <!-- 手机端背景图 -->
+                <img src="img/home.png" 
+                     alt="战斗吧精灵游戏宣传图" 
+                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow md:hidden"
+                     loading="lazy">
+                <!-- 电脑端背景图 -->
+                <img src="img/contentBg1.png" 
+                     alt="战斗吧精灵游戏宣传图" 
+                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow hidden md:block"
+                     loading="lazy">
+                <div class="absolute inset-0 gradient-overlay"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12 z-10">
+                    <h2 class="text-[clamp(2rem,7vw,3.5rem)] font-bold text-white text-shadow-lg mb-6 animate-fade-in">
+                        游戏公告
+                    </h2>
+                    <p class="text-[clamp(1rem,2.5vw,1.4rem)] text-white text-shadow max-w-3xl mx-auto mb-8 animate-slide-up">
+                        了解《战斗吧精灵》最新活动信息、版本更新和游戏公告
+                    </p>
+                </div>
+                
+                <!-- 底部渐变过渡 -->
+                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-light to-transparent"></div>
+            </div>
+        </section>
+
+        <!-- 公告列表 -->
+        <section class="section-padding bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="section-title">最新公告</h2>
+                <div class="divider"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- 公告列表 -->
+                    <div class="lg:col-span-2">
+                        <!-- 公告项 1 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article20.html" class="hover:text-primary transition-colors">4月18-19日周末礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-04-17
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵4月18-19日周末通用礼包码：q2sk6dr3，礼包内容：闪光冷水猿*1，使用时间：4.18-0:00~4.19-23:59，限时两天！
+                            </p>
+                            
+                            <a href="articles/news-article20.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article19.html" class="hover:text-primary transition-colors">天王赛数据解析 | 谁才是本赛季"版本答案"？</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-04-14
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    赛事
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵最新天王赛数据震撼发布！幽灵系以3800分登顶本届最高分，水系稳居前列，恶系与幽灵系共霸高端局。本期参赛人数4004人，飞行、水、地属性人气最高！
+                            </p>
+                            
+                            <a href="articles/news-article19.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article18.html" class="hover:text-primary transition-colors">优秀攻略 | 冠军之路速成攻略-太晶双打篇</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-04-10
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    攻略
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵太晶双打赛季优秀攻略第1弹，训练师天涯《冠军之路速成攻略-太晶双打篇》，包含阵容推荐、强势精灵配置及反制思路。
+                            </p>
+                            
+                            <a href="articles/news-article18.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article17.html" class="hover:text-primary transition-colors">4月11日通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-04-10
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵4月11日通用礼包码：pn756j1b，内容包含闪小箭雀*1，生效时间4.11-0:00~4.12-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article17.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article16.html" class="hover:text-primary transition-colors">3月21日周末通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-03-20
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵3月21日周末通用礼包码：Spke7apx，内容包含闪光小小象*1，生效时间3.21-0:00~3.22-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article16.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article15.html" class="hover:text-primary transition-colors">战斗吧精灵版本更新 | 本周更新维护提醒</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-03-18
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    版本更新
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                亲爱的训练家们~下午好哇！又到了每周的更新维护时间，本次更新将于3月19日10:30上线，若有意外将会顺延，具体以游戏内实际开服为准哦！
+                            </p>
+                            
+                            <a href="articles/news-article15.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article7.html" class="hover:text-primary transition-colors">优秀攻略 | Mega赛季制胜之道——强势精灵推荐及搭配建议</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-03-16
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    优秀攻略
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                《战斗吧精灵》Mega赛季优秀攻略第2弹，训练家匿天分享强势精灵推荐及搭配建议，包含辅助精灵、输出精灵、肉盾精灵推荐及两套完整阵容配置！
+                            </p>
+                            
+                            <a href="articles/news-article7.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 2 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article6.html" class="hover:text-primary transition-colors">3月14日周末通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-03-13
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵3月14日周末通用礼包码：Tree1Day，内容包含闪朽木妖*1+农作物随机礼包*5，生效时间3.14-0:00~3.15-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article6.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 3 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article8.html" class="hover:text-primary transition-colors">1.31专区礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-01-30
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    专区礼包
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵1.31专区「极致天赋」专属礼包码：31DssjLx，内容包含非闪凯路迪欧*1，生效时间1.31-0:00~2.1-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article8.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 4 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article9.html" class="hover:text-primary transition-colors">1.24-1.25通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-01-23
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵1.24-1.25通用礼包码：fnvv0lr5，内容包含闪阿柏蛇*1，生效时间1.24-0:00~1.25-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article9.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 5 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article10.html" class="hover:text-primary transition-colors">战斗吧精灵周年庆礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-01-08
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    周年庆
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵周年庆礼包码汇总：通用礼包码znq520，周年庆礼包码zdbjlznq520、zdbjlznq666、zdbjlznq888，专区礼包码znq666，丰厚奖励等你来拿！
+                            </p>
+                            
+                            <a href="articles/news-article10.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 6 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article11.html" class="hover:text-primary transition-colors">1.03-1.04通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2026-01-02
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵1.03-1.04通用礼包码：96a6B39e，内容包含闪树才怪*1，生效时间1月3日~1月4日23：59。
+                            </p>
+                            
+                            <a href="articles/news-article11.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 7 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article12.html" class="hover:text-primary transition-colors">1.01-1.02通用礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2025-12-31
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    礼包码
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵1.01-1.02通用礼包码：42x89xqa，内容包含闪露力丽*1，生效时间1.01-0:00~1.02-23:59。
+                            </p>
+                            
+                            <a href="articles/news-article12.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 公告项 8 -->
+                        <article class="bg-light rounded-2xl p-6 md:p-8 shadow-lg card-hover mb-6">
+                            <h2 class="text-xl md:text-2xl font-bold text-dark mb-3">
+                                <a href="articles/news-article13.html" class="hover:text-primary transition-colors">战斗吧精灵赛季额外礼包码</a>
+                            </h2>
+                            
+                            <div class="article-meta">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-calendar"></i>
+                                    2025-12-30
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-tag"></i>
+                                    赛季礼包
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fa fa-eye"></i>
+                                    0
+                                </span>
+                            </div>
+                            
+                            <p class="text-gray-600 mt-4 mb-4">
+                                战斗吧精灵赛季额外礼包码汇总：赛季通用礼包码season、season1、season2、season3，以及12.31赛季专区[无限太晶]礼包码season666，丰厚奖励等你来拿！
+                            </p>
+                            
+                            <a href="articles/news-article13.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                                阅读更多 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </article>
+                        
+                        <!-- 分页导航 -->
+                        <div class="flex justify-center mt-10">
+                            <nav class="inline-flex rounded-md shadow">
+                                <a href="#" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-l-md hover:bg-gray-50">
+                                    上一页
+                                </a>
+                                <a href="news.html" class="px-3 py-2 text-sm font-medium text-white bg-primary border border-primary">
+                                    1
+                                </a>
+                                <a href="news2.html" class="px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:bg-gray-50">
+                                    2
+                                </a>
+                                <a href="news2.html" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-r-md hover:bg-gray-50">
+                                    下一页
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <!-- 侧边栏 -->
+                    <div class="lg:col-span-1">
+                        <!-- 公告分类 -->
+                        <div class="bg-light rounded-2xl p-6 shadow-md mb-6">
+                            <h3 class="text-lg font-bold text-dark mb-4 flex items-center gap-2">
+                                <i class="fa fa-list text-primary"></i>
+                                公告分类
+                            </h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors py-2">
+                                        <span>活动公告</span>
+                                        <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors py-2">
+                                        <span>版本更新</span>
+                                        <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors py-2">
+                                        <span>维护公告</span>
+                                        <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors py-2">
+                                        <span>其他公告</span>
+                                        <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 最新公告 -->
+                        <div class="bg-light rounded-2xl p-6 shadow-md mb-6">
+                            <h3 class="text-lg font-bold text-dark mb-4 flex items-center gap-2">
+                                <i class="fa fa-newspaper-o text-primary"></i>
+                                最新公告
+                            </h3>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="articles/news-article20.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">4月18-19日周末礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-04-17</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article19.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">天王赛数据解析 | 谁才是本赛季"版本答案"？</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-04-14</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article18.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">优秀攻略 | 冠军之路速成攻略-太晶双打篇</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-04-10</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article17.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">4月11日通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-04-10</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article16.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">3月21日周末通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-03-20</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article15.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">战斗吧精灵版本更新 | 本周更新维护提醒</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-03-18</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article7.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">优秀攻略 | Mega赛季制胜之道</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-03-16</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article6.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">3月14日周末通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-03-13</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article8.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">1.31专区礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-01-30</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article9.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">1.24-1.25通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-01-23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article10.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">战斗吧精灵周年庆礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-01-08</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article11.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">1.03-1.04通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2026-01-02</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article12.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">1.01-1.02通用礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2025-12-31</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article13.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">战斗吧精灵赛季额外礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2025-12-30</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="articles/news-article14.html" class="block group">
+                                        <p class="text-gray-700 font-medium group-hover:text-primary transition-colors">2025.12.27-2025.12.28周末礼包码</p>
+                                        <p class="text-gray-500 text-sm mt-1">2025-12-26</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 联系客服 -->
+                        <div class="bg-light rounded-2xl p-6 shadow-md">
+                            <h3 class="text-lg font-bold text-dark mb-4 flex items-center gap-2">
+                                <i class="fa fa-headphones text-primary"></i>
+                                联系客服
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                如有任何问题，可通过以下方式联系客服：
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                                        <i class="fab fa-weixin text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">官方公众号</p>
+                                        <p class="text-gray-500 text-sm">小茂爱手游</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-[#12B7F5]/10 rounded-full flex items-center justify-center">
+                                        <i class="fab fa-qq text-[#12B7F5]"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">官方QQ群</p>
+                                        <p class="text-gray-500 text-sm">931319494</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下载区域 -->
+        <section class="section-padding bg-gradient-to-b from-primary/5 to-white relative overflow-hidden">
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <h2 class="section-title">立即体验</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    加入《战斗吧精灵》的奇幻世界，体验最新活动和游戏内容！
+                </p>
+                
+                <div class="flex flex-col items-center">
+                    <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                       class="inline-flex items-center gradient-primary hover:brightness-110 text-white font-bold py-4 px-12 rounded-full text-lg md:text-xl btn-hover mb-10 shadow-xl"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-download mr-3 text-2xl"></i> 立即下载游戏
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-6">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="logo.png" 
+                         alt="战斗吧精灵游戏图标" 
+                         class="h-12 w-12 rounded-lg mr-4 shadow-lg object-cover"
+                         loading="lazy">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold mb-1">战斗吧精灵</h2>
+                        <p class="text-gray-400 text-sm">口袋妖怪手游</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-weibo"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-qq"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-10 mb-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">快速链接</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                首页
+                            </a></li>
+                            <li><a href="features.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏特色
+                            </a></li>
+                            <li><a href="guide.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏攻略
+                            </a></li>
+                            <li><a href="codes.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                兑换码
+                            </a></li>
+                            <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏公告
+                            </a></li>
+                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                联系我们
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">资源链接</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏下载
+                            </a></li>
+                            <li><a href="https://www.nnii.cn" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                更多口袋妖怪游戏
+                            </a></li>
+                            <li><a href="guide.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏攻略
+                            </a></li>
+                            <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏公告
+                            </a></li>
+                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                客服支持
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">下载游戏</h3>
+                        <p class="text-gray-300 mb-3 text-sm">扫描二维码下载游戏</p>
+                        <div class="bg-white p-2 rounded-lg inline-block shadow-lg mb-3">
+                            <img src="xzewm.png" alt="下载二维码" class="w-24 h-24 object-cover"
+                                 loading="lazy">
+                        </div>
+                        <p class="text-gray-400 text-xs">支持安卓/iOS双平台</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">客服支持</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-headphones text-primary mt-1 text-sm"></i>
+                                <div>
+                                    <p class="text-gray-300 text-sm">在线客服</p>
+                                    <p class="text-gray-400 text-xs">工作日 9:00-18:00</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-envelope text-primary mt-1 text-sm"></i>
+                                <div>
+                                    <p class="text-gray-300 text-sm">客服邮箱</p>
+                                    <p class="text-gray-400 text-xs">support@zdbjl.com</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fab fa-qq text-primary mt-1 text-sm"></i>
+                                <div>
+                                    <p class="text-gray-300 text-sm">官方QQ群</p>
+                                    <p class="text-gray-400 text-xs">931319494</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-6 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2026 战斗吧精灵 版权所有 | 游戏适龄提示：本游戏适合12岁以上玩家
+                </p>
+                <p class="text-gray-500 text-xs mt-2">
+                    本游戏适合12岁以上玩家 | 适度游戏益脑，沉迷游戏伤身
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const isOpen = !mobileMenu.classList.contains('opacity-0');
+            
+            if (isOpen) {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            } else {
+                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.add('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            }
+        });
+        
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('py-2');
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

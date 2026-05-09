@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩家社区 - 战斗吧精灵 | 全世代宝可梦手游</title>
+    <meta name="keywords" content="战斗吧精灵, 玩家社区, 口袋妖怪手游, 玩家交流, 游戏论坛, 社区活动">
+    <meta name="description" content="《战斗吧精灵》官方玩家社区聚集地，训练家们交流心得、分享经验的最佳平台。在这里你可以找到最新游戏攻略、参与社区活动、结交志同道合的伙伴，共同探索口袋妖怪的奇妙世界，开启你的冒险之旅！">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:title" content="玩家社区 - 战斗吧精灵 | 口袋妖怪正版手游">
+    <meta property="og:description" content="《战斗吧精灵》官方玩家社区聚集地，训练家们交流心得、分享经验的最佳平台。在这里你可以找到最新游戏攻略、参与社区活动、结交志同道合的伙伴，共同探索口袋妖怪的奇妙世界！">
+    <meta property="og:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    <meta property="og:url" content="https://zdbjl.nnii.cn/community.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="战斗吧精灵">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="玩家社区 - 战斗吧精灵 | 口袋妖怪正版手游">
+    <meta name="twitter:description" content="《战斗吧精灵》官方玩家社区，在这里与其他训练家交流心得，分享游戏经验，参与社区活动，一起探索口袋妖怪的奇妙世界。">
+    <meta name="twitter:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    
+    <!-- 引入Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5E5B',
+                        secondary: '#4CAF50',
+                        accent: '#FFC107',
+                        dark: '#212121',
+                        light: '#f5f5f5'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 引入外部CSS文件 -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light font-sans text-dark overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926" 
+                     alt="战斗吧精灵游戏图标" 
+                     class="h-10 w-10 rounded-lg shadow-sm object-cover transition-transform duration-300 hover:rotate-12">
+                <h1 class="text-xl md:text-2xl font-bold text-primary tracking-tight">战斗吧精灵</h1>
+            </div>
+            
+            <!-- 桌面端导航 -->
+            <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
+                <!-- 首页 -->
+                <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    首页
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 游戏内容下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        游戏内容
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏特色
+                            </a>
+                            <a href="guide.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏攻略
+                            </a>
+                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                属性相克
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 兑换码 -->
+                <a href="codes.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    兑换码
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 社区与资讯下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-primary font-medium relative">
+                        社区资讯
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="news.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏公告
+                            </a>
+                            <a href="community.html" class="block px-4 py-2 text-primary bg-primary/5">
+                                玩家社区
+                            </a>
+                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                联系我们
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 游戏下载 -->
+                <a href="download.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    游戏下载
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 更多 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        更多
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                                更多口袋妖怪游戏
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="flex items-center space-x-3">
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                   class="hidden md:flex items-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
+                    <i class="fas fa-download mr-2"></i> 立即下载
+                </a>
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-400 z-[-1]" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-3">
+                <a href="index.html" class="text-primary py-3 px-4 rounded-lg bg-primary/5">首页</a>
+                <a href="features.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏特色</a>
+                <a href="guide.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏攻略</a>
+                <a href="codes.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">兑换码</a>
+                <a href="news.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏公告</a>
+                <a href="pokedex.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">属性相克</a>
+                <a href="download.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏下载</a>
+                <a href="community.html" class="text-primary py-3 px-4 rounded-lg bg-primary/5">玩家社区</a>
+                <a href="contact.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">联系我们</a>
+                <a href="https://www.nnii.cn" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">更多口袋妖怪游戏</a>
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" class="flex items-center justify-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
+                    <i class="fas fa-download mr-2"></i> 立即下载
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 z-20"></div>
+        <div class="container mx-auto px-4 z-30 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg animate-fadeIn">玩家社区</h1>
+            <p class="text-xl md:text-2xl mb-8 text-shadow">与其他训练家一起交流，分享你的口袋妖怪冒险</p>
+            <a href="#community-section" class="inline-block bg-accent hover:bg-accent/90 text-black font-bold py-3 px-8 rounded-full btn-hover">
+                <i class="fas fa-users mr-2"></i>加入社区
+            </a>
+        </div>
+    </section>
+
+    <!-- 社区动态 -->
+    <section id="community-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-accent">社区动态</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 动态1 -->
+                <div class="bg-white rounded-xl overflow-hidden card-hover border border-gray-100 shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                        <i class="fas fa-trophy text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://www.pkeif.com/img/home/navIcon.png" alt="玩家头像" class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">训练家小明</h4>
+                                <p class="text-sm text-gray-400">2024-03-15</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">成功挑战道馆，获得徽章！</h3>
+                        <p class="text-gray-300 mb-4">今天终于成功挑战了岩石道馆，我的暴鲤龙发挥得非常出色，轻松击败了馆主！</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-4">
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-heart mr-1"></i> 24
+                                </button>
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-comment mr-1"></i> 8
+                                </button>
+                            </div>
+                            <a href="#" class="text-yellow-400 hover:text-yellow-300 transition-colors">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 动态2 -->
+                <div class="bg-white rounded-xl overflow-hidden card-hover border border-gray-100 shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-secondary to-primary flex items-center justify-center">
+                        <i class="fas fa-paw text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://www.pkeif.com/img/home/navIcon.png" alt="玩家头像" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">训练家小红</h4>
+                                <p class="text-sm text-gray-400">2024-03-14</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">孵出了闪光精灵！</h3>
+                        <p class="text-gray-300 mb-4">运气真好，孵蛋竟然孵出了闪光皮卡丘！太开心了，分享给大家看看。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-4">
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-heart mr-1"></i> 42
+                                </button>
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-comment mr-1"></i> 15
+                                </button>
+                            </div>
+                            <a href="#" class="text-yellow-400 hover:text-yellow-300 transition-colors">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 动态3 -->
+                <div class="bg-white rounded-xl overflow-hidden card-hover border border-gray-100 shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-secondary to-accent flex items-center justify-center">
+                        <i class="fas fa-gamepad text-6xl text-white opacity-70"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://www.pkeif.com/img/home/navIcon.png" alt="玩家头像" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">训练家小李</h4>
+                                <p class="text-sm text-gray-400">2024-03-13</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">PVP对战连胜10场！</h3>
+                        <p class="text-gray-300 mb-4">今天在PVP对战中连胜10场，我的队伍配置终于成型了，分享一下我的阵容。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-4">
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-heart mr-1"></i> 36
+                                </button>
+                                <button class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                    <i class="far fa-comment mr-1"></i> 12
+                                </button>
+                            </div>
+                            <a href="#" class="text-yellow-400 hover:text-yellow-300 transition-colors">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区活动 -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-accent">社区活动</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 活动1 -->
+                <div class="bg-white rounded-xl p-6 card-hover border border-gray-100 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-gift text-black text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">社区签到有礼</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">每日在社区签到，累计签到7天即可获得稀有精灵蛋和游戏道具奖励！</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-yellow-400">活动时间：2024-03-01 至 2024-03-31</span>
+                        <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg btn-hover">
+                            立即参与
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 活动2 -->
+                <div class="bg-white rounded-xl p-6 card-hover border border-gray-100 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-camera text-black text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">精灵摄影大赛</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">分享你的精灵截图，参与摄影大赛，赢取精美周边和游戏礼包！</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-yellow-400">活动时间：2024-03-15 至 2024-03-30</span>
+                        <a href="#" class="bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg btn-hover">
+                            立即参与
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 玩家论坛 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-accent">玩家论坛</h2>
+            <div class="bg-light rounded-xl p-8 border border-gray-100 shadow-md">
+                <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+                    <div class="mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-2">加入我们的官方论坛</h3>
+                        <p class="text-gray-300">在这里与其他训练家交流心得，分享游戏经验，讨论战术策略</p>
+                    </div>
+                    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full btn-hover">
+                        <i class="fas fa-comments mr-2"></i>访问论坛
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-black bg-opacity-30 rounded-lg p-4">
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-fire text-yellow-400 mr-2"></i>
+                            热门讨论
+                        </h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">PVP最强阵容推荐</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">如何高效培养精灵</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">最新活动攻略</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-black bg-opacity-30 rounded-lg p-4">
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-question-circle text-blue-400 mr-2"></i>
+                            问题求助
+                        </h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">游戏登录问题</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">精灵进化材料获取</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">活动任务完成方法</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-black bg-opacity-30 rounded-lg p-4">
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-star text-purple-400 mr-2"></i>
+                            精彩分享
+                        </h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">我的闪光精灵收藏</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">道馆挑战技巧</a></li>
+                            <li><a href="#" class="hover:text-yellow-400 transition-colors">游戏趣闻趣事</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区规范 -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-accent">社区规范</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-xl p-6 border border-gray-100 shadow-md">
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>尊重他人，友善交流，不发表辱骂、歧视等不良言论</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>遵守法律法规，不发布违法违规内容</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>保护个人隐私，不泄露他人信息</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>文明发言，不传播谣言和虚假信息</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>遵守游戏规则，不讨论作弊、外挂等违规行为</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                        <span>保持社区整洁，不发布与游戏无关的广告内容</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">战斗吧精灵</h3>
+                    <p class="text-gray-400">官方正版口袋妖怪手游，还原经典玩法，开启全新冒险！</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-400 transition-colors">首页</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-yellow-400 transition-colors">游戏特色</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-yellow-400 transition-colors">游戏攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-yellow-400 transition-colors">兑换码</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-yellow-400 transition-colors">游戏公告</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">更多链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pokedex.html" class="text-gray-400 hover:text-yellow-400 transition-colors">精灵图鉴</a></li>
+                        <li><a href="download.html" class="text-gray-400 hover:text-yellow-400 transition-colors">游戏下载</a></li>
+                        <li><a href="community.html" class="text-gray-400 hover:text-yellow-400 transition-colors">玩家社区</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-400 transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">关注我们</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-white hover:text-yellow-400 transition-colors text-2xl">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition-colors text-2xl">
+                            <i class="fab fa-qq"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition-colors text-2xl">
+                            <i class="fab fa-weibo"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">公众号：小茂爱手游</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 战斗吧精灵 版权所有 | 游戏适龄提示：本游戏适合12岁以上玩家</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const isOpen = !mobileMenu.classList.contains('opacity-0');
+            
+            if (isOpen) {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            } else {
+                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.add('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            }
+        });
+    </script>
+</body>
+</html>

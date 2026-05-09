@@ -1,0 +1,986 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《战斗吧精灵》网站 - 全世代口袋妖怪手游 | Mega进化与极巨化对战</title>
+    <meta name="keywords" content="战斗吧精灵, 口袋妖怪手游, 精灵对战, Mega进化, 极巨化, 太晶化, 战斗吧精灵下载, 皮卡丘">
+    <meta name="description" content="《战斗吧精灵》全世代口袋妖怪手游巨作，集Mega进化、太晶化、极巨化三大特色系统于一身。数百只经典宝可梦悉数登场，策略性回合制对战让你重温童年梦想。立即下载领取专属兑换码，与皮卡丘一起踏上冒险之旅！">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:title" content="《战斗吧精灵》网站 - 口袋妖怪手游 | Mega进化与极巨化对战">
+    <meta property="og:description" content="《战斗吧精灵》全世代口袋妖怪手游巨作，集Mega进化、太晶化、极巨化三大特色系统于一身。数百只经典宝可梦悉数登场，策略性回合制对战让你重温童年梦想！">
+    <meta property="og:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    <meta property="og:url" content="https://zdbjl.nnii.cn/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="战斗吧精灵">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="《战斗吧精灵》网站 - 口袋妖怪手游 | Mega进化与极巨化对战">
+    <meta name="twitter:description" content="战斗吧精灵口袋妖怪手游，全新体验Mega、太晶化与极巨化激情碰撞，独特的神奇宝贝对战！安卓iOS下载，领取专属兑换码！">
+    <meta name="twitter:image" content="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926">
+    
+    <!-- 引入Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5E5B',
+                        secondary: '#4CAF50',
+                        accent: '#FFC107',
+                        dark: '#212121',
+                        light: '#f5f5f5'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 引入外部CSS文件 -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-light font-sans text-dark overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://img1.tucang.cc/api/image/show/7a644617e29047dffe235c2508840926" 
+                     alt="战斗吧精灵游戏图标" 
+                     class="h-10 w-10 rounded-lg shadow-sm object-cover transition-transform duration-300 hover:rotate-12"
+                     loading="lazy">
+                <h1 class="text-xl md:text-2xl font-bold text-primary tracking-tight">战斗吧精灵</h1>
+            </div>
+            
+            <!-- 桌面端导航 -->
+            <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
+                <!-- 首页 -->
+                <a href="index.html" class="text-primary font-medium relative group">
+                    首页
+                    <span class="absolute bottom-[-4px] left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
+                </a>
+                
+                <!-- 游戏内容下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        游戏内容
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="features.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏特色
+                            </a>
+                            <a href="guide.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏攻略
+                            </a>
+                            <a href="pokedex.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                属性相克
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 兑换码 -->
+                <a href="codes.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    兑换码
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 社区与资讯下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        社区资讯
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="news.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                游戏公告
+                            </a>
+                            <a href="community.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                玩家社区
+                            </a>
+                            <a href="contact.html" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors">
+                                联系我们
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 游戏下载 -->
+                <a href="download.html" class="text-dark hover:text-primary transition-colors font-medium relative group">
+                    游戏下载
+                    <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <!-- 更多 -->
+                <div class="relative group">
+                    <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
+                        更多
+                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div class="py-2">
+                            <a href="https://www.nnii.cn" class="block px-4 py-2 text-dark hover:bg-primary/5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                                更多口袋妖怪游戏
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="flex items-center space-x-3">
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                   class="hidden md:flex items-center px-5 py-2.5 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
+                    <i class="fa fa-download mr-2"></i> 立即下载
+                </a>
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-400 z-[-1]" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-2 max-h-[80vh] overflow-y-auto">
+                <!-- 常用功能 -->
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">常用功能</p>
+                    <a href="index.html" class="flex items-center text-primary py-3 px-4 rounded-lg bg-primary/5">
+                        <i class="fa fa-home w-6"></i> 首页
+                    </a>
+                    <a href="download.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-download w-6"></i> 游戏下载
+                    </a>
+                    <a href="codes.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-gift w-6"></i> 兑换码
+                    </a>
+                </div>
+                
+                <!-- 游戏内容 -->
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">游戏内容</p>
+                    <a href="features.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-star w-6"></i> 游戏特色
+                    </a>
+                    <a href="guide.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-book w-6"></i> 游戏攻略
+                    </a>
+                    <a href="pokedex.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-table w-6"></i> 属性相克
+                    </a>
+                </div>
+                
+                <!-- 社区与资讯 -->
+                <div class="mb-2">
+                    <p class="text-xs text-gray-400 px-4 py-2 uppercase tracking-wider">社区与资讯</p>
+                    <a href="news.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-bullhorn w-6"></i> 游戏公告
+                    </a>
+                    <a href="community.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-users w-6"></i> 玩家社区
+                    </a>
+                    <a href="contact.html" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">
+                        <i class="fa fa-envelope w-6"></i> 联系我们
+                    </a>
+                </div>
+                
+                <!-- 更多 -->
+                <div class="border-t border-gray-100 pt-2">
+                    <a href="https://www.nnii.cn" class="flex items-center text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-external-link w-6"></i> 更多口袋妖怪游戏
+                    </a>
+                </div>
+                
+                <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                   class="text-center px-5 py-3 gradient-primary text-white rounded-full btn-hover font-medium mt-3 shadow-md">
+                    <i class="fa fa-download mr-2"></i> 立即下载游戏
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="relative overflow-hidden">
+            <div class="relative h-[85vh] min-h-[550px] overflow-hidden">
+                <!-- 手机端背景图 -->
+                <img src="img/home.png" 
+                     alt="战斗吧精灵游戏宣传图" 
+                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow md:hidden"
+                     loading="lazy">
+                <!-- 电脑端背景图 -->
+                <img src="img/contentBg1.png" 
+                     alt="战斗吧精灵游戏宣传图" 
+                     class="w-full h-full object-cover object-center scale-105 animate-bounce-slow hidden md:block"
+                     loading="lazy">
+                <div class="absolute inset-0 gradient-overlay"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12 z-10">
+                    <h2 class="text-[clamp(2rem,7vw,4rem)] font-bold text-white text-shadow-lg mb-6 animate-fade-in">
+                        战斗吧精灵
+                    </h2>
+                    <p class="text-[clamp(1rem,2.5vw,1.4rem)] text-white text-shadow max-w-3xl mx-auto mb-8 animate-slide-up">
+                        全新体验Mega、太晶化与极巨化激情碰撞，不一样的神奇宝贝对战！
+                    </p>
+                    <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                       class="inline-flex items-center gradient-primary hover:brightness-110 text-white font-bold py-3.5 px-10 rounded-full text-lg btn-hover mb-6 shadow-xl animate-slide-up"
+                       style="animation-delay: 0.2s"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-download mr-2"></i> 立即下载游戏
+                    </a>
+                    <div class="flex flex-wrap items-center justify-center gap-6 text-white text-shadow animate-slide-up" style="animation-delay: 0.4s">
+                        <span class="flex items-center">
+                            <i class="fab fa-android mr-2 text-xl"></i> Android 5.0+
+                        </span>
+                        <span class="h-4 w-px bg-white/50 hidden sm:block"></span>
+                        <span class="flex items-center">
+                            <i class="fab fa-apple mr-2 text-xl"></i> iOS 10.0+
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- 底部渐变过渡 -->
+                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-light to-transparent"></div>
+            </div>
+        </section>
+
+        <!-- 公告区域 -->
+        <section class="py-8 bg-accent/10">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-accent/30">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fa fa-bullhorn text-accent text-xl"></i>
+                        </div>
+                        <h2 class="text-xl md:text-2xl font-bold text-dark">重要公告</h2>
+                        <span class="bg-accent text-white text-xs px-3 py-1 rounded-full">3月11日</span>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-dark flex items-center gap-2">
+                            <i class="fa fa-gift text-primary"></i>
+                            单日线下返利活动
+                        </h3>
+                        
+                        <div class="bg-accent/5 rounded-xl p-5 border border-accent/20">
+                            <p class="text-gray-700 mb-4">
+                                在本站链接下载的玩家可以到公众号：小茂爱手游
+                            </p>
+                            <p class="text-gray-700 mb-4 font-medium">
+                                联系右下角客服领取礼包码
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- 档位1 -->
+                            <div class="bg-light rounded-xl p-5 border-2 border-primary/30 card-hover">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="bg-primary text-white text-xs px-2 py-1 rounded-full">档位一</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-dark mb-2">单日累充 1000</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-primary"></i>
+                                        水晶*300
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-primary"></i>
+                                        扭蛋券*10
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-primary"></i>
+                                        SSR学习机随机
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 档位2 -->
+                            <div class="bg-light rounded-xl p-5 border-2 border-secondary/30 card-hover">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="bg-secondary text-white text-xs px-2 py-1 rounded-full">档位二</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-dark mb-2">单日累充 3000</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-secondary"></i>
+                                        水晶*500
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-secondary"></i>
+                                        扭蛋券*30
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-secondary"></i>
+                                        UR学习机随机
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 档位3 -->
+                            <div class="bg-light rounded-xl p-5 border-2 border-accent/30 card-hover">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="bg-accent text-white text-xs px-2 py-1 rounded-full">档位三</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-dark mb-2">单日累充 5000</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-accent"></i>
+                                        水晶*800
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-accent"></i>
+                                        扭蛋券*30
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-accent"></i>
+                                        UR精灵石*2
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 档位4 -->
+                            <div class="bg-light rounded-xl p-5 border-2 border-red-500/30 card-hover">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">档位四</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-dark mb-2">单日累充 10000</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-red-500"></i>
+                                        水晶*1000
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-red-500"></i>
+                                        扭蛋券*50
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa fa-check text-red-500"></i>
+                                        稀有UR精灵石*2
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-50 rounded-xl p-5 border border-red-200">
+                            <div class="flex items-start gap-3">
+                                <i class="fa fa-exclamation-circle text-red-500 text-2xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-red-600 mb-2">重要注意事项</h4>
+                                    <ul class="space-y-1 text-red-700">
+                                        <li>• 单日线下当日充值次日申请，三天内要申请，逾期视为放弃</li>
+                                        <li>• 公众号：小茂爱手游 联系客服申请！</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏特色 -->
+        <section id="features" class="section-padding bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="section-title">游戏特色</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    《战斗吧精灵》带来全新口袋妖怪对战体验，融合多种进化形态，打造独特战斗系统
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-primary/20 transition-colors">
+                            <i class="fa fa-bolt text-2xl md:text-3xl text-primary group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">Mega进化系统</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            经典Mega进化回归，口袋妖怪能力大幅提升，外观更加炫酷，解锁全新技能组合，战斗策略更多样化
+                        </p>
+                    </div>
+                    
+                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-secondary/20 transition-colors">
+                            <i class="fa fa-diamond text-2xl md:text-3xl text-secondary group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">太晶化战斗</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            全新太晶化系统，改变口袋妖怪属性与招式效果，创造出意想不到的战斗反转，策略深度全面升级
+                        </p>
+                    </div>
+                    
+                    <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md card-hover border border-gray-100 group">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-accent/20 transition-colors">
+                            <i class="fa fa-expand text-2xl md:text-3xl text-accent group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-dark mb-4 text-center">极巨化对决</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            口袋妖怪巨大化变身，释放毁天灭地的极巨招式，震撼视觉特效搭配爽快打击感，带来沉浸式战斗体验
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏截图 -->
+        <section id="screenshots" class="section-padding bg-light">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="section-title">游戏截图</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    探索《战斗吧精灵》的精彩游戏世界，体验多样化的战斗与冒险
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="rounded-xl overflow-hidden shadow-xl card-hover group relative">
+                        <img src="https://img1.tucang.cc/api/image/show/9cfada3aa5486d3f368dd74137034c77" 
+                             alt="口袋妖怪战斗场景" 
+                             class="w-full h-48 md:h-64 object-cover transition-transform duration-700 group-hover:scale-125"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <p class="text-white p-3 text-sm">震撼口袋妖怪对战场景</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-xl card-hover group relative">
+                        <img src="https://img1.tucang.cc/api/image/show/5e91e34f216632d87c36d1331e2807ed" 
+                             alt="精灵收集界面" 
+                             class="w-full h-48 md:h-64 object-cover transition-transform duration-700 group-hover:scale-125"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <p class="text-white p-3 text-sm">丰富精灵收集系统</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-xl card-hover group relative">
+                        <img src="https://img1.tucang.cc/api/image/show/abb918249c9406388731beaca3ac70b6" 
+                             alt="地图探索" 
+                             class="w-full h-48 md:h-64 object-cover transition-transform duration-700 group-hover:scale-125"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <p class="text-white p-3 text-sm">广阔地图自由探索</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-xl card-hover group relative">
+                        <img src="https://img1.tucang.cc/api/image/show/afca50dc790185c2081f84b0f179974d" 
+                             alt="Mega进化展示" 
+                             class="w-full h-48 md:h-64 object-cover transition-transform duration-700 group-hover:scale-125"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <p class="text-white p-3 text-sm">炫酷Mega进化展示</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 查看更多按钮 -->
+                <div class="text-center mt-10">
+                    <button class="px-6 py-2.5 bg-white text-primary border border-primary rounded-full btn-hover font-medium shadow-sm">
+                        <i class="fa fa-images mr-2"></i> 查看更多截图
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 兑换码区域 -->
+        <section id="codes" class="section-padding bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="section-title">专属兑换码</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    输入以下兑换码，领取丰厚游戏奖励，助力你的口袋妖怪冒险之旅
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+                    <!-- 兑换码卡片1 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">新手福利</h3>
+                            <span class="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full">通用</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            summergo666
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：特性石*20+疲劳值*50+金币*50000</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="summergo666">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                    
+                    <!-- 兑换码卡片2 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">精灵奖励</h3>
+                            <span class="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full">通用</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            summergo888
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：闪光布拨</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="summergo888">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                    
+                    <!-- 兑换码卡片3 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">皮卡丘礼包</h3>
+                            <span class="bg-accent/10 text-accent text-xs px-2.5 py-1 rounded-full">热门</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            pkq520
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：闪光皮卡丘</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="pkq520">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                    
+                    <!-- 兑换码卡片4 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">水晶礼包</h3>
+                            <span class="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full">通用</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            sj666
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：水晶*666+经验糖果S</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="sj666">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                    
+                    <!-- 兑换码卡片5 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">扭蛋礼包</h3>
+                            <span class="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full">通用</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            nd888
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：扭蛋*20+超级球*10+疲劳*100</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="nd888">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                    
+                    <!-- 兑换码卡片6 -->
+                    <div class="bg-light rounded-2xl p-5 md:p-6 shadow-md card-hover border-l-4 border-primary relative overflow-hidden group">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h3 class="font-bold text-lg md:text-xl text-dark">SSR礼包</h3>
+                            <span class="bg-red-100 text-red-500 text-xs px-2.5 py-1 rounded-full">稀有</span>
+                        </div>
+                        <div class="bg-white p-3 md:p-4 rounded-xl font-mono text-center text-dark mb-4 border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow">
+                            SSR888
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">奖励：SSR携带物包*1+魔力方块小*10</p>
+                        <button class="w-full py-2 bg-primary/5 text-primary rounded-lg copy-btn flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors" data-code="SSR888">
+                            <i class="fa fa-copy"></i> 复制兑换码
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="mt-12 bg-primary/5 rounded-2xl p-6 md:p-8 text-center">
+                    <p class="text-gray-700 text-base md:text-lg mb-5 font-medium">更多兑换码将在公众号定期发布，敬请关注</p>
+                    <a href="#contact" class="inline-flex items-center px-7 py-3 gradient-primary text-white rounded-full btn-hover font-medium shadow-md">
+                        <i class="fa fa-qrcode mr-2"></i> 关注获取更多福利
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下载区域 -->
+        <section class="section-padding bg-gradient-to-b from-primary/5 to-white relative overflow-hidden">
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <h2 class="section-title">立即下载游戏</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    加入《战斗吧精灵》的奇幻世界，收集你喜爱的口袋妖怪，体验全新战斗系统！
+                </p>
+                
+                <div class="flex flex-col items-center">
+                    <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                       class="inline-flex items-center gradient-primary hover:brightness-110 text-white font-bold py-4 px-12 rounded-full text-lg md:text-xl btn-hover mb-10 shadow-xl"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-download mr-3 text-2xl"></i> 点击下载游戏
+                    </a>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-4xl w-full">
+                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover flex flex-col items-center border border-gray-100 group">
+                            <div class="text-5xl md:text-6xl text-primary mb-5 group-hover:text-primary/80 transition-colors">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <h3 class="font-bold text-xl md:text-2xl text-dark mb-3">安卓版</h3>
+                            <p class="text-gray-600 text-center mb-6 max-w-xs">适用于Android 5.0及以上系统，完美适配各种机型</p>
+                            <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                               class="px-6 md:px-8 py-2.5 bg-primary/10 text-primary rounded-full btn-hover font-medium shadow-sm group-hover:bg-primary/20 transition-colors"
+                               target="_blank" rel="noopener noreferrer">
+                                下载安卓客户端
+                            </a>
+                        </div>
+                        
+                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover flex flex-col items-center border border-gray-100 group">
+                            <div class="text-5xl md:text-6xl text-primary mb-5 group-hover:text-primary/80 transition-colors">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <h3 class="font-bold text-xl md:text-2xl text-dark mb-3">iOS版</h3>
+                            <p class="text-gray-600 text-center mb-6 max-w-xs">适用于iOS 10.0及以上系统，流畅运行无压力</p>
+                            <a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" 
+                               class="px-6 md:px-8 py-2.5 bg-primary/10 text-primary rounded-full btn-hover font-medium shadow-sm group-hover:bg-primary/20 transition-colors"
+                               target="_blank" rel="noopener noreferrer">
+                                下载iOS客户端
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section id="contact" class="section-padding bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="section-title">联系我们</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">
+                    加入我们的社群，获取最新游戏资讯、活动信息和专属福利
+                </p>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md border border-gray-100 card-hover">
+                            <h3 class="text-xl md:text-2xl font-bold text-dark mb-5 flex items-center">
+                                <i class="fab fa-qq text-primary mr-3 text-2xl md:text-3xl"></i>
+                                官方QQ群
+                            </h3>
+                            <div class="flex flex-col md:flex-row md:items-center gap-3 mb-5">
+                                <div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-200 flex-1">
+                                    <p class="text-gray-500 text-sm mb-1">群号</p>
+                                    <p class="text-dark font-mono text-lg md:text-xl">931319494</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-5">加入QQ群，与其他训练家交流心得，获取最新活动信息和专属客服支持</p>
+                            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=73rz8jZPQTK5wmEl9X9DTKPO3jDCv0sz&jump_from=webapi&authKey=mUtxc9hekmbRtbxesFCUddDZwEbfezqTHiUMeRgAElDM7W5/XRQHd2QeMXke7XPR" 
+                               class="inline-flex items-center px-6 py-3 bg-[#12B7F5] text-white rounded-full btn-hover font-medium shadow-md"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-qq mr-2"></i> 立即加入QQ群
+                            </a>
+                        </div>
+                        
+                        <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md border border-gray-100 card-hover">
+                            <h3 class="text-xl md:text-2xl font-bold text-dark mb-5">更多口袋妖怪游戏</h3>
+                            <p class="text-gray-600 mb-5">访问我们的游戏总站，发现更多精彩的口袋妖怪系列游戏和独家福利</p>
+                            <a href="https://www.nnii.cn" 
+                               class="inline-flex items-center px-6 py-3 bg-dark text-white rounded-full btn-hover font-medium shadow-md"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-gamepad mr-2"></i> 访问游戏总站
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border-2 border-primary/20 text-center max-w-sm w-full card-hover">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                                <i class="fab fa-weixin text-3xl md:text-4xl text-primary"></i>
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold text-dark mb-3">官方公众号</h3>
+                            <p class="text-gray-600 mb-6">扫码关注公众号"小茂爱手游"，获取最新兑换码、游戏资讯和独家活动</p>
+                            <div class="bg-white p-3 md:p-4 rounded-xl shadow-md inline-block mb-5 border border-gray-200">
+                                <img src="/wxewm.jpg" 
+                                     alt="官方公众号二维码" 
+                                     class="w-48 md:w-56 h-48 md:h-56 object-contain"
+                                     loading="lazy">
+                            </div>
+                            <p class="font-bold text-dark text-lg">小茂爱手游</p>
+                            <p class="text-gray-500 text-sm mt-1">定期更新游戏攻略和福利活动</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-6">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="/logo.png" 
+                         alt="战斗吧精灵游戏图标" 
+                         class="h-12 w-12 rounded-lg mr-4 shadow-lg object-cover">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold mb-1">战斗吧精灵</h2>
+                        <p class="text-gray-400 text-sm">精灵手游</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-weibo"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary transition-colors text-xl p-2 rounded-full hover:bg-white/5">
+                        <i class="fab fa-qq"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-10 mb-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">快速链接</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                首页
+                            </a></li>
+                            <li><a href="#features" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏特色
+                            </a></li>
+                            <li><a href="#screenshots" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏截图
+                            </a></li>
+                            <li><a href="#codes" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                兑换码
+                            </a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                联系我们
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">资源链接</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://game.6266game.cn/website/zdbjl/?JvkuJCmm" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏下载
+                            </a></li>
+                            <li><a href="https://www.nnii.cn" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                更多口袋妖怪游戏
+                            </a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                游戏攻略
+                            </a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                常见问题
+                            </a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                客服支持
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">下载游戏</h3>
+                        <p class="text-gray-300 mb-3 text-sm">扫描二维码下载游戏</p>
+                        <div class="bg-white p-2 rounded-lg inline-block shadow-lg mb-3">
+                            <img src="/xzewm.png" alt="下载二维码" class="w-24 h-24 object-cover"
+                                 loading="lazy">
+                        </div>
+                        <p class="text-gray-400 text-xs">支持安卓/iOS双平台</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-5 text-accent">客服支持</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-headphones text-primary mt-1 text-sm"></i>
+                                <div>
+                                    <p class="text-gray-300 text-sm">在线客服</p>
+                                    <p class="text-gray-400 text-xs">工作日 9:00-18:00</p>
+                                </div>
+                            </li>
+                            
+                            <li class="flex items-start gap-2">
+                                <i class="fab fa-qq text-primary mt-1 text-sm"></i>
+                                <div>
+                                    <p class="text-gray-300 text-sm">QQ群</p>
+                                    <p class="text-gray-400 text-xs">931319494</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-gray-400 text-xs md:text-sm pt-6 border-t border-white/5">
+                <p class="mb-2">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。</p>
+                <p class="mb-3">适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+                <p>© 2026 战斗吧精灵 版权所有 | 游戏适龄提示：本游戏适合12岁以上玩家</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-6 right-6 gradient-primary text-white p-3 rounded-full shadow-xl opacity-0 invisible transition-all duration-300 z-50 hover:shadow-2xl hover:scale-110 group" title="返回顶部">
+        <i class="fa fa-arrow-up text-base group-hover:animate-bounce"></i>
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-dark text-white text-sm px-3 py-1.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap">
+            返回顶部
+            <span class="absolute right-[-6px] top-1/2 -translate-y-1/2 border-4 border-transparent border-l-dark"></span>
+        </span>
+    </button>
+
+    <!-- 复制成功提示 -->
+    <div id="toast" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-dark/95 backdrop-blur-sm text-white px-6 py-3 rounded-2xl shadow-2xl opacity-0 invisible transition-all duration-300 z-50 flex items-center gap-3 scale-90">
+        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+            <i class="fa fa-check text-white text-lg"></i>
+        </div>
+        <div>
+            <p class="font-bold">复制成功</p>
+            <p class="text-sm text-gray-300">兑换码已复制到剪贴板</p>
+        </div>
+    </div>
+
+    <!-- 核心交互脚本 -->
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const backToTop = document.getElementById('backToTop');
+            const scrollThreshold = window.innerHeight * 0.5; // 滚动超过半屏显示返回顶部按钮
+            
+            if (window.scrollY > 100) {
+                header.classList.add('py-2', 'shadow-lg');
+                header.classList.remove('py-3', 'shadow-md');
+            } else {
+                header.classList.add('py-3', 'shadow-md');
+                header.classList.remove('py-2', 'shadow-lg');
+            }
+            
+            // 返回顶部按钮显示逻辑
+            if (window.scrollY > scrollThreshold) {
+                backToTop.classList.remove('opacity-0', 'invisible', 'translate-y-10');
+                backToTop.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                backToTop.classList.add('opacity-0', 'invisible', 'translate-y-10');
+                backToTop.classList.remove('opacity-100', 'visible', 'translate-y-0');
+            }
+        });
+        
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const isOpen = !mobileMenu.classList.contains('opacity-0');
+            
+            if (isOpen) {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            } else {
+                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                mobileMenu.classList.add('opacity-100', 'visible', 'translate-y-0', 'z-50');
+            }
+        });
+        
+        // 返回顶部功能
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // 关闭移动菜单
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
+                    mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
+                    
+                    // 滚动到目标位置
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 复制兑换码功能
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const code = this.getAttribute('data-code');
+                const originalText = this.innerHTML;
+                
+                navigator.clipboard.writeText(code).then(() => {
+                    // 显示提示
+                    const toast = document.getElementById('toast');
+                    toast.classList.remove('opacity-0', 'invisible', 'scale-90');
+                    toast.classList.add('opacity-100', 'visible', 'scale-100');
+                    
+                    // 按钮状态变化
+                    this.innerHTML = '<i class="fa fa-check"></i> 已复制';
+                    this.classList.remove('bg-primary/5', 'text-primary');
+                    this.classList.add('bg-green-100', 'text-green-600');
+                    
+                    // 移动端震动反馈
+                    if (navigator.vibrate) {
+                        navigator.vibrate(50);
+                    }
+                    
+                    // 2秒后恢复
+                    setTimeout(() => {
+                        toast.classList.add('opacity-0', 'invisible', 'scale-90');
+                        toast.classList.remove('opacity-100', 'visible', 'scale-100');
+                        
+                        this.innerHTML = originalText;
+                        this.classList.add('bg-primary/5', 'text-primary');
+                        this.classList.remove('bg-green-100', 'text-green-600');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('复制失败:', err);
+                    // 降级方案：选中文本
+                    const range = document.createRange();
+                    range.selectNode(this.previousElementSibling);
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range);
+                });
+            });
+        });
+        
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为所有区块添加渐入动画
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
