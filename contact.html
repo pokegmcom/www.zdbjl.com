@@ -44,6 +44,7 @@
     <!-- 引入外部CSS文件 -->
     <link href="style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
 </head>
 <body class="bg-light font-sans text-dark overflow-x-hidden">
     <!-- 导航栏 -->
@@ -68,7 +69,7 @@
                 <div class="relative group">
                     <button class="flex items-center text-dark hover:text-primary transition-colors font-medium relative">
                         游戏内容
-                        <i class="fa fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                        <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
                         <span class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 z-50 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
@@ -144,13 +145,13 @@
                 </a>
                 <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-dark text-xl p-2 rounded-full hover:bg-gray-100 transition-colors" id="menu-toggle">
-                    <i class="fa fa-bars"></i>
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
         
         <!-- 移动端菜单 -->
-        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-400 z-[-1]" id="mobile-menu">
+        <div class="md:hidden bg-white shadow-xl absolute w-full left-0 top-full transform -translate-y-full opacity-0 invisible transition-all duration-300 z-[-1]" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-x-0 space-y-3">
                 <a href="index.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">首页</a>
                 <a href="features.html" class="text-dark hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50">游戏特色</a>
@@ -235,7 +236,7 @@
                             </h3>
                             <p class="text-gray-600 mb-5">关注官方公众号"小茂爱手游"，获取最新游戏资讯、活动信息和专属福利</p>
                             <div class="bg-white p-4 rounded-xl shadow-md inline-block mb-5 border border-gray-200">
-                                <img src="wxewm.jpg" 
+                                <img src="img/wxewm.jpg" 
                                      alt="官方公众号二维码" 
                                      class="w-48 md:w-56 h-48 md:h-56 object-contain"
                                      loading="lazy">
@@ -275,7 +276,7 @@
                         
                         <div class="bg-light rounded-2xl p-6 md:p-8 shadow-md border border-gray-100 card-hover">
                             <h3 class="text-xl md:text-2xl font-bold text-dark mb-5 flex items-center">
-                                <i class="fa fa-gamepad text-primary mr-3 text-2xl md:text-3xl"></i>
+                                <i class="fas fa-gamepad text-primary mr-3 text-2xl md:text-3xl"></i>
                                 更多口袋妖怪游戏
                             </h3>
                             <p class="text-gray-600 mb-5">访问我们的游戏总站，发现更多精彩的口袋妖怪系列游戏和独家福利</p>
@@ -401,7 +402,7 @@
         <div class="container mx-auto px-4 md:px-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-12">
                 <div class="flex items-center mb-6 md:mb-0">
-                    <img src="logo.png" 
+                    <img src="img/logo.png" 
                          alt="战斗吧精灵游戏图标" 
                          class="h-12 w-12 rounded-lg mr-4 shadow-lg object-cover">
                     <div>
@@ -429,7 +430,7 @@
                         <h3 class="text-lg font-bold mb-5 text-accent">快速链接</h3>
                         <ul class="space-y-2">
                             <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                                <i class="fa fa-angle-right text-primary text-sm"></i>
+                                <i class="fas fa-angle-right text-primary text-sm"></i>
                                 首页
                             </a></li>
                             <li><a href="features.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
@@ -481,7 +482,7 @@
                         <h3 class="text-lg font-bold mb-5 text-accent">下载游戏</h3>
                         <p class="text-gray-300 mb-3 text-sm">扫描二维码下载游戏</p>
                         <div class="bg-white p-2 rounded-lg inline-block shadow-lg mb-3">
-                            <img src="xzewm.png" alt="下载二维码" class="w-24 h-24 object-cover"
+                            <img src="img/xzewm.png" alt="下载二维码" class="w-24 h-24 object-cover"
                                  loading="lazy">
                         </div>
                         <p class="text-gray-400 text-xs">支持安卓/iOS双平台</p>
@@ -498,7 +499,7 @@
                                 </div>
                             </li>
                             <li class="flex items-start gap-2">
-                                <i class="fa fa-envelope text-primary mt-1 text-sm"></i>
+                                <i class="fas fa-envelope text-primary mt-1 text-sm"></i>
                                 <div>
                                     <p class="text-gray-300 text-sm">客服邮箱</p>
                                     <p class="text-gray-400 text-xs">support@zdbjl.com</p>
@@ -527,32 +528,6 @@
         </div>
     </footer>
 
-    <script>
-        // 移动端菜单
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const isOpen = !mobileMenu.classList.contains('opacity-0');
-            
-            if (isOpen) {
-                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
-                mobileMenu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'z-50');
-            } else {
-                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-full', 'z-[-1]');
-                mobileMenu.classList.add('opacity-100', 'visible', 'translate-y-0', 'z-50');
-            }
-        });
-        
-        // 导航栏滚动效果
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('py-2');
-                header.classList.remove('shadow-lg');
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
