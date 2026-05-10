@@ -253,6 +253,18 @@
                     $('#pm-header').removeClass('scrolled');
                 }
             });
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.pm-fade-in-up').forEach(function(el) {
+                observer.observe(el);
+            });
         });
     </script>
 </body>
