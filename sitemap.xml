@@ -2,166 +2,246 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- 首页 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/index.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-    
+
     <!-- 游戏特色 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/features.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/features.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
+
     <!-- 兑换码 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/codes.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/codes.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
-    
+
     <!-- 新闻列表第一页 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/news.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/news.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- 新闻列表第二页 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/news2.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/news2.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- 游戏下载 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/download.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/download.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- 游戏攻略 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/guide.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/guide.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- 属性相克 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/pokedex.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/pokedex.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <!-- 联系我们 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/contact.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/contact.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <!-- 玩家社区 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/community.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/community.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
+    <!-- 资讯文章列表 -->
+    <url>
+        <loc>https://www.zdbjl.com/articles.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- 文章页面 -->
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article1.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article1.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article2.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article2.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article3.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article3.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article4.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article4.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article5.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article5.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article6.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article6.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article7.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article7.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article8.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article8.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article9.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article9.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article10.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article10.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article11.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article11.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article12.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article12.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article13.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article13.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://zdbjl.nnii.cn/articles/news-article14.html</loc>
-        <lastmod>2026-03-16</lastmod>
+        <loc>https://www.zdbjl.com/articles/news-article14.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article15.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article16.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article17.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article18.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article19.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article20.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article21.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article22.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article23.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article24.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article25.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.zdbjl.com/articles/news-article26.html</loc>
+        <lastmod>2026-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
