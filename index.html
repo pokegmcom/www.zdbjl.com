@@ -63,14 +63,14 @@
         <button class="pm-modal-close" onclick="closeImageModal()" aria-label="关闭图片查看器">
             <i class="fas fa-times" aria-hidden="true"></i>
         </button>
-        <img id="pm-modal-image" src="" alt="查看大图" width="800" height="600">
+        <img id="pm-modal-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="查看大图" width="800" height="600" decoding="async">
     </div>
 
     <header id="pm-header" class="pm-header">
         <div class="pm-container">
             <div class="d-flex justify-content-between align-items-center py-3">
                 <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
-                    <img src="img/icons/icon.webp" alt="战斗吧精灵游戏图标" class="rounded-3 shadow-sm" width="40" height="40" style="transition: transform 0.3s ease;">
+                    <img src="img/icons/icon.webp" alt="战斗吧精灵游戏图标" class="rounded-3 shadow-sm" width="40" height="40" style="transition: transform 0.3s ease;" decoding="async">
                     <div>
                         <span class="fs-4 fw-bold" style="color: var(--pm-primary);">战斗吧！精灵</span>
                         <span class="badge ms-1" style="background: linear-gradient(135deg, var(--pm-accent), #f59e0b);">手游</span>
@@ -128,7 +128,7 @@
     <main style="padding-top: 72px;">
         <section class="pm-hero">
             <div class="pm-hero-bg"></div>
-            <img src="img/contentBg1.webp" alt="战斗吧精灵游戏宣传图" class="position-absolute w-100 h-100" style="object-fit: cover; mix-blend-mode: overlay; opacity: 0.6; inset: 0;" onerror="this.style.display='none'">
+            <img src="img/contentBg1.webp" fetchpriority="high" alt="战斗吧精灵游戏宣传图" class="position-absolute w-100 h-100" style="object-fit: cover; mix-blend-mode: overlay; opacity: 0.6; inset: 0;" onerror="this.style.display='none'" decoding="async" srcset="img/contentBg1-960.webp 960w, img/contentBg1-1440.webp 1440w, img/contentBg1.webp 1920w" sizes="(max-width: 768px) 100vw, 1200px">
             <div class="pm-hero-overlay"></div>
 
             <div class="position-absolute d-none d-md-block" style="top: 15%; left: 8%; opacity: 0.2;">
@@ -291,16 +291,16 @@
 
                 <div class="pm-screenshot-gallery pm-fade-in-up">
                     <div class="pm-screenshot-item" onclick="openImageModal('img/screenshots/game-screenshot-1.webp')">
-                        <img src="img/screenshots/game-screenshot-1.webp" alt="战斗吧精灵游戏截图1" loading="lazy" width="1200" height="554">
+                        <img src="img/screenshots/game-screenshot-1.webp" alt="战斗吧精灵游戏截图1" loading="lazy" width="1200" height="554" decoding="async" srcset="img/screenshots/game-screenshot-1-600.webp 600w, img/screenshots/game-screenshot-1-900.webp 900w, img/screenshots/game-screenshot-1.webp 1200w" sizes="(max-width: 768px) 100vw, 1200px">
                     </div>
                     <div class="pm-screenshot-item" onclick="openImageModal('img/screenshots/game-screenshot-2.webp')">
-                        <img src="img/screenshots/game-screenshot-2.webp" alt="战斗吧精灵游戏截图2" loading="lazy" width="1200" height="554">
+                        <img src="img/screenshots/game-screenshot-2.webp" alt="战斗吧精灵游戏截图2" loading="lazy" width="1200" height="554" decoding="async" srcset="img/screenshots/game-screenshot-2-600.webp 600w, img/screenshots/game-screenshot-2-900.webp 900w, img/screenshots/game-screenshot-2.webp 1200w" sizes="(max-width: 768px) 100vw, 1200px">
                     </div>
                     <div class="pm-screenshot-item" onclick="openImageModal('img/screenshots/game-screenshot-3.webp')">
-                        <img src="img/screenshots/game-screenshot-3.webp" alt="战斗吧精灵游戏截图3" loading="lazy" width="1200" height="554">
+                        <img src="img/screenshots/game-screenshot-3.webp" alt="战斗吧精灵游戏截图3" loading="lazy" width="1200" height="554" decoding="async" srcset="img/screenshots/game-screenshot-3-600.webp 600w, img/screenshots/game-screenshot-3-900.webp 900w, img/screenshots/game-screenshot-3.webp 1200w" sizes="(max-width: 768px) 100vw, 1200px">
                     </div>
                     <div class="pm-screenshot-item" onclick="openImageModal('img/screenshots/game-screenshot-4.webp')">
-                        <img src="img/screenshots/game-screenshot-4.webp" alt="战斗吧精灵游戏截图4" loading="lazy" width="1200" height="554">
+                        <img src="img/screenshots/game-screenshot-4.webp" alt="战斗吧精灵游戏截图4" loading="lazy" width="1200" height="554" decoding="async" srcset="img/screenshots/game-screenshot-4-600.webp 600w, img/screenshots/game-screenshot-4-900.webp 900w, img/screenshots/game-screenshot-4.webp 1200w" sizes="(max-width: 768px) 100vw, 1200px">
                     </div>
                 </div>
             </div>
@@ -421,7 +421,7 @@
             <div class="row g-4 mb-4">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="img/icons/icon.webp" alt="战斗吧精灵图标" width="40" height="40" class="rounded-3">
+                        <img src="img/icons/icon.webp" alt="战斗吧精灵图标" width="40" height="40" class="rounded-3" decoding="async">
                         <span class="fs-4 fw-bold text-white">战斗吧！精灵</span>
                     </div>
                     <p class="text-white-50 mb-0">正版精灵IP授权手游，1000+精灵等你来捕捉！</p>
@@ -450,8 +450,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/jquery-4.0.0.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/jq-lite.js"></script>
     <script>
         $(document).ready(function() {
             $('#pm-menu-toggle').click(function() {
